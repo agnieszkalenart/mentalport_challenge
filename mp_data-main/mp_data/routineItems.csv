@@ -1,0 +1,133 @@
+checked,title,content,__key__,__error__,__has_error__
+true,Test,123,"{
+  ""__key__"": {
+    ""namespace"": """",
+    ""app"": ""e~mentalport-dev"",
+    ""path"": ""\""users\"", \""fHrkNtaGFIWyO2t5BPfa1vfU76R2\"", \""routineItems\"", \""mAw1TTsQFTpBsun1jAKc\"""",
+    ""kind"": ""routineItems"",
+    ""name"": ""mAw1TTsQFTpBsun1jAKc"",
+    ""id"": null
+  }
+}",[],false
+false,hdhh,ddu,"{
+  ""__key__"": {
+    ""namespace"": """",
+    ""app"": ""e~mentalport-dev"",
+    ""path"": ""\""users\"", \""sBiEjDKG8AeMsSt6d3fzaBUNiEr1\"", \""routineItems\"", \""RuoVdNJ6y7EXFO5W3KbX\"""",
+    ""kind"": ""routineItems"",
+    ""name"": ""RuoVdNJ6y7EXFO5W3KbX"",
+    ""id"": null
+  }
+}",[],false
+false,test,igj,"{
+  ""__key__"": {
+    ""namespace"": """",
+    ""app"": ""e~mentalport-dev"",
+    ""path"": ""\""users\"", \""FkpxsnbsaeX8PCN16qUGAD8TC9v1\"", \""routineItems\"", \""1KNQbICu5mxHSeknwl21\"""",
+    ""kind"": ""routineItems"",
+    ""name"": ""1KNQbICu5mxHSeknwl21"",
+    ""id"": null
+  }
+}",[],false
+false,jsjg,bdve,"{
+  ""__key__"": {
+    ""namespace"": """",
+    ""app"": ""e~mentalport-dev"",
+    ""path"": ""\""users\"", \""FkpxsnbsaeX8PCN16qUGAD8TC9v1\"", \""routineItems\"", \""BGwlJaBdHl70yg5e87Zt\"""",
+    ""kind"": ""routineItems"",
+    ""name"": ""BGwlJaBdHl70yg5e87Zt"",
+    ""id"": null
+  }
+}",[],false
+false,,uuvh,"{
+  ""__key__"": {
+    ""namespace"": """",
+    ""app"": ""e~mentalport-dev"",
+    ""path"": ""\""users\"", \""FkpxsnbsaeX8PCN16qUGAD8TC9v1\"", \""routineItems\"", \""LT1hxxhUVl0wXPEIlVl9\"""",
+    ""kind"": ""routineItems"",
+    ""name"": ""LT1hxxhUVl0wXPEIlVl9"",
+    ""id"": null
+  }
+}",[],false
+false,dhhsj,gr cg,"{
+  ""__key__"": {
+    ""namespace"": """",
+    ""app"": ""e~mentalport-dev"",
+    ""path"": ""\""users\"", \""FkpxsnbsaeX8PCN16qUGAD8TC9v1\"", \""routineItems\"", \""SnQvDwNS59LiANm639Fd\"""",
+    ""kind"": ""routineItems"",
+    ""name"": ""SnQvDwNS59LiANm639Fd"",
+    ""id"": null
+  }
+}",[],false
+false,Morgens,"- Digital Detox
+- Wasser trinken
+- Meditation und Bewegung","{
+  ""__key__"": {
+    ""namespace"": """",
+    ""app"": ""e~mentalport-dev"",
+    ""path"": ""\""users\"", \""fHrkNtaGFIWyO2t5BPfa1vfU76R2\"", \""routineItems\"", \""2vziIQ2mEpQyv8d7nc3L\"""",
+    ""kind"": ""routineItems"",
+    ""name"": ""2vziIQ2mEpQyv8d7nc3L"",
+    ""id"": null
+  }
+}",[],false
+false,Morgens,"- Digital Detox
+- Wasser trinken
+- Meditation und Bewegung","{
+  ""__key__"": {
+    ""namespace"": """",
+    ""app"": ""e~mentalport-dev"",
+    ""path"": ""\""users\"", \""ymYDXD2opve4fA198aYRyNIJINN2\"", \""routineItems\"", \""bBTNeIsexvTujnidgUy7\"""",
+    ""kind"": ""routineItems"",
+    ""name"": ""bBTNeIsexvTujnidgUy7"",
+    ""id"": null
+  }
+}",[],false
+true,Morgens,"- Digital Detox
+- Wasser trinken
+- Meditation und Bewegung","{
+  ""__key__"": {
+    ""namespace"": """",
+    ""app"": ""e~mentalport-dev"",
+    ""path"": ""\""users\"", \""ymYDXD2opve4fA198aYRyNIJINN2\"", \""routineItems\"", \""wXbzB9dmXZHZNSbrK39t\"""",
+    ""kind"": ""routineItems"",
+    ""name"": ""wXbzB9dmXZHZNSbrK39t"",
+    ""id"": null
+  }
+}",[],false
+false,Achtsamkeit,"- Achtsam am Abend
+- Digital Detox
+- Persönliche Zeit für mich","{
+  ""__key__"": {
+    ""namespace"": """",
+    ""app"": ""e~mentalport-dev"",
+    ""path"": ""\""users\"", \""fHrkNtaGFIWyO2t5BPfa1vfU76R2\"", \""routineItems\"", \""ns9Vg4JEjjAi14QZETwW\"""",
+    ""kind"": ""routineItems"",
+    ""name"": ""ns9Vg4JEjjAi14QZETwW"",
+    ""id"": null
+  }
+}",[],false
+false,Morgens,"- Digital Detox? 
+- Wasser trinken nein
+- Meditation und Bewegung nein","{
+  ""__key__"": {
+    ""namespace"": """",
+    ""app"": ""e~mentalport-dev"",
+    ""path"": ""\""users\"", \""ymYDXD2opve4fA198aYRyNIJINN2\"", \""routineItems\"", \""VbRL1BWEN14rArG0lnau\"""",
+    ""kind"": ""routineItems"",
+    ""name"": ""VbRL1BWEN14rArG0lnau"",
+    ""id"": null
+  }
+}",[],false
+false,Nachmittags,"- Ausreichend Wasser trinken
+- Spaziergang an der frischen Luft
+- Persönliche Zeit für mich","{
+  ""__key__"": {
+    ""namespace"": """",
+    ""app"": ""e~mentalport-dev"",
+    ""path"": ""\""users\"", \""fHrkNtaGFIWyO2t5BPfa1vfU76R2\"", \""routineItems\"", \""UkJ8SdLsgnojT1Fy1D9t\"""",
+    ""kind"": ""routineItems"",
+    ""name"": ""UkJ8SdLsgnojT1Fy1D9t"",
+    ""id"": null
+  }
+}",[],false

@@ -1,0 +1,61 @@
+exerciseID,lastModified,strength_collection,successBalance,success_list,__key__,__error__,__has_error__
+1.24,2022-03-28 15:49:01.253000 UTC,[],"{
+  ""successBalance"": [{
+    ""description"": ""landed my first heelflip at 11 years old in venice beach skatepark"",
+    ""title"": ""first heelflip"",
+    ""reasonToBeProud"": ""persisted even after many failed attempts and injuries and it paid off"",
+    ""__key__"": {
+      ""namespace"": """",
+      ""app"": """",
+      ""path"": """",
+      ""kind"": null,
+      ""name"": null,
+      ""id"": null
+    }
+  }, {
+    ""description"": ""got accepted into harvard at 15 years of age"",
+    ""title"": ""accepted into harvard"",
+    ""reasonToBeProud"": ""persisted even after many failed attempts and injuries and now i have to pay off my student loans"",
+    ""__key__"": {
+      ""namespace"": """",
+      ""app"": """",
+      ""path"": """",
+      ""kind"": null,
+      ""name"": null,
+      ""id"": null
+    }
+  }]
+}",[],"{
+  ""__key__"": {
+    ""namespace"": """",
+    ""app"": ""e~mentalport-dev"",
+    ""path"": ""\""users\"", \""FkpxsnbsaeX8PCN16qUGAD8TC9v1\"", \""journal\"", \""1.24 - success-balance\"""",
+    ""kind"": ""journal"",
+    ""name"": ""1.24 - success-balance"",
+    ""id"": null
+  }
+}",[],false
+1.65,2022-03-19 21:23:46.788000 UTC,[],"{
+  ""successBalance"": []
+}","[اين مفاتيحي,هل يوجد مطعم قريب؟]","{
+  ""__key__"": {
+    ""namespace"": """",
+    ""app"": ""e~mentalport-dev"",
+    ""path"": ""\""users\"", \""FkpxsnbsaeX8PCN16qUGAD8TC9v1\"", \""journal\"", \""1.65 - success-list\"""",
+    ""kind"": ""journal"",
+    ""name"": ""1.65 - success-list"",
+    ""id"": null
+  }
+}",[],false
+1.09,2022-03-19 21:26:02.635000 UTC,"[السلام بين العوالم,الدين أفيون للجماهير,صناديق التحوط القصيرة ستنزف]","{
+  ""successBalance"": []
+}",[],"{
+  ""__key__"": {
+    ""namespace"": """",
+    ""app"": ""e~mentalport-dev"",
+    ""path"": ""\""users\"", \""FkpxsnbsaeX8PCN16qUGAD8TC9v1\"", \""journal\"", \""1.09 - strength-collection\"""",
+    ""kind"": ""journal"",
+    ""name"": ""1.09 - strength-collection"",
+    ""id"": null
+  }
+}",[],false

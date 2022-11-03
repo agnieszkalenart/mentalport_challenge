@@ -1,0 +1,2094 @@
+moodBuzzWords,createdAt,moodRating,answersToMoodStatements,additionalNotes,dayFullness,feelingsRating,__key__,__error__,__has_error__
+"[entspannt,traurig,einsam,energiegeladen,ja]",2022-05-09 12:33:25.805000 UTC,"{
+  ""moodRating"": {
+    ""float"": null,
+    ""integer"": ""50"",
+    ""provided"": ""integer""
+  }
+}","[eher ja,eher nein]",Test,"{
+  ""dayFullness"": {
+    ""float"": ""90.277777777777658"",
+    ""integer"": null,
+    ""provided"": ""float""
+  }
+}",5,"{
+  ""__key__"": {
+    ""namespace"": """",
+    ""app"": ""e~mentalport-dev"",
+    ""path"": ""\""users\"", \""FkpxsnbsaeX8PCN16qUGAD8TC9v1\"", \""moodData\"", \""BbEXyWhCg9QyEe3Mj3EX\"""",
+    ""kind"": ""moodData"",
+    ""name"": ""BbEXyWhCg9QyEe3Mj3EX"",
+    ""id"": null
+  }
+}",[],false
+[],2022-04-30 22:00:00.000000 UTC,"{
+  ""moodRating"": {
+    ""float"": ""0.0"",
+    ""integer"": null,
+    ""provided"": ""float""
+  }
+}","[Die ganze Zeit,Die ganze Zeit,Die ganze Zeit,Die ganze Zeit,Die ganze Zeit,Meistens,Meistens,Meistens,Meistens,Meistens]",,"{
+  ""dayFullness"": {
+    ""float"": ""0.0"",
+    ""integer"": null,
+    ""provided"": ""float""
+  }
+}",1,"{
+  ""__key__"": {
+    ""namespace"": """",
+    ""app"": ""e~mentalport-dev"",
+    ""path"": ""\""users\"", \""FkpxsnbsaeX8PCN16qUGAD8TC9v1\"", \""moodData\"", \""LBnuuRChliL7JjuWpWAJ\"""",
+    ""kind"": ""moodData"",
+    ""name"": ""LBnuuRChliL7JjuWpWAJ"",
+    ""id"": null
+  }
+}",[],false
+[],2022-10-14 12:07:37.072000 UTC,"{
+  ""moodRating"": {
+    ""float"": ""0.0"",
+    ""integer"": null,
+    ""provided"": ""float""
+  }
+}",[],,"{
+  ""dayFullness"": {
+    ""float"": ""50.0"",
+    ""integer"": null,
+    ""provided"": ""float""
+  }
+}",4,"{
+  ""__key__"": {
+    ""namespace"": """",
+    ""app"": ""e~mentalport-dev"",
+    ""path"": ""\""users\"", \""fHrkNtaGFIWyO2t5BPfa1vfU76R2\"", \""moodData\"", \""8Yw8CWRrAj3YnoPTZFAM\"""",
+    ""kind"": ""moodData"",
+    ""name"": ""8Yw8CWRrAj3YnoPTZFAM"",
+    ""id"": null
+  }
+}",[],false
+[],2022-05-17 22:00:00.000000 UTC,"{
+  ""moodRating"": {
+    ""float"": ""0.0"",
+    ""integer"": null,
+    ""provided"": ""float""
+  }
+}","[Die ganze Zeit,Die ganze Zeit,Die ganze Zeit,Die ganze Zeit,Die ganze Zeit,Meistens,Meistens,Meistens,Meistens,Meistens,Die ganze Zeit,Etwas mehr als die Hälfte der Zeit,Meistens,Etwas weniger als die Hälfte der Zeit,Ab und zu,Die ganze Zeit,Meistens,Etwas weniger als die Hälfte der Zeit,Die ganze Zeit,Meistens,Die ganze Zeit,Die ganze Zeit,Die ganze Zeit,Die ganze Zeit,Die ganze Zeit,Die ganze Zeit,Etwas mehr als die Hälfte der Zeit,Meistens,Ab und zu,Die ganze Zeit,Die ganze Zeit,Die ganze Zeit,Die ganze Zeit,Die ganze Zeit,Die ganze Zeit]",,"{
+  ""dayFullness"": {
+    ""float"": ""50.0"",
+    ""integer"": null,
+    ""provided"": ""float""
+  }
+}",1,"{
+  ""__key__"": {
+    ""namespace"": """",
+    ""app"": ""e~mentalport-dev"",
+    ""path"": ""\""users\"", \""fHrkNtaGFIWyO2t5BPfa1vfU76R2\"", \""moodData\"", \""JqvUPbh0SCnvYiRGNGQ5\"""",
+    ""kind"": ""moodData"",
+    ""name"": ""JqvUPbh0SCnvYiRGNGQ5"",
+    ""id"": null
+  }
+}",[],false
+[],2022-10-14 12:07:46.457000 UTC,"{
+  ""moodRating"": {
+    ""float"": ""0.0"",
+    ""integer"": null,
+    ""provided"": ""float""
+  }
+}",[],,"{
+  ""dayFullness"": {
+    ""float"": ""50.0"",
+    ""integer"": null,
+    ""provided"": ""float""
+  }
+}",1,"{
+  ""__key__"": {
+    ""namespace"": """",
+    ""app"": ""e~mentalport-dev"",
+    ""path"": ""\""users\"", \""fHrkNtaGFIWyO2t5BPfa1vfU76R2\"", \""moodData\"", \""WZn2kTLPs1VufxQ1lmJi\"""",
+    ""kind"": ""moodData"",
+    ""name"": ""WZn2kTLPs1VufxQ1lmJi"",
+    ""id"": null
+  }
+}",[],false
+[],2022-09-08 00:00:00.000000 UTC,"{
+  ""moodRating"": {
+    ""float"": ""0.0"",
+    ""integer"": null,
+    ""provided"": ""float""
+  }
+}",[],,"{
+  ""dayFullness"": {
+    ""float"": ""50.0"",
+    ""integer"": null,
+    ""provided"": ""float""
+  }
+}",1,"{
+  ""__key__"": {
+    ""namespace"": """",
+    ""app"": ""e~mentalport-dev"",
+    ""path"": ""\""users\"", \""sBiEjDKG8AeMsSt6d3fzaBUNiEr1\"", \""moodData\"", \""5gWl3YoWE2EThF4kwbSi\"""",
+    ""kind"": ""moodData"",
+    ""name"": ""5gWl3YoWE2EThF4kwbSi"",
+    ""id"": null
+  }
+}",[],false
+[],2022-05-24 22:00:00.000000 UTC,"{
+  ""moodRating"": {
+    ""float"": ""50.0"",
+    ""integer"": null,
+    ""provided"": ""float""
+  }
+}","[Die ganze Zeit,Die ganze Zeit,Die ganze Zeit,Die ganze Zeit,Die ganze Zeit]",,"{
+  ""dayFullness"": {
+    ""float"": ""50.0"",
+    ""integer"": null,
+    ""provided"": ""float""
+  }
+}",2,"{
+  ""__key__"": {
+    ""namespace"": """",
+    ""app"": ""e~mentalport-dev"",
+    ""path"": ""\""users\"", \""FkpxsnbsaeX8PCN16qUGAD8TC9v1\"", \""moodData\"", \""LNMp4ytr5683G4f1ex9e\"""",
+    ""kind"": ""moodData"",
+    ""name"": ""LNMp4ytr5683G4f1ex9e"",
+    ""id"": null
+  }
+}",[],false
+[],2022-05-29 16:00:57.644000 UTC,"{
+  ""moodRating"": {
+    ""float"": ""50.0"",
+    ""integer"": null,
+    ""provided"": ""float""
+  }
+}","[Die ganze Zeit,Meistens,Etwas mehr als die Hälfte der Zeit,Etwas weniger als die Hälfte der Zeit,Ab und zu]",,"{
+  ""dayFullness"": {
+    ""float"": ""50.0"",
+    ""integer"": null,
+    ""provided"": ""float""
+  }
+}",4,"{
+  ""__key__"": {
+    ""namespace"": """",
+    ""app"": ""e~mentalport-dev"",
+    ""path"": ""\""users\"", \""FkpxsnbsaeX8PCN16qUGAD8TC9v1\"", \""moodData\"", \""NFpRPv4k8yTpUUuVvGTN\"""",
+    ""kind"": ""moodData"",
+    ""name"": ""NFpRPv4k8yTpUUuVvGTN"",
+    ""id"": null
+  }
+}",[],false
+[],2022-05-20 01:25:57.985000 UTC,"{
+  ""moodRating"": {
+    ""float"": ""50.0"",
+    ""integer"": null,
+    ""provided"": ""float""
+  }
+}","[Etwas mehr als die 
+ Hälfte der Zeit,Zu keinem Zeitpunkt,Meistens,Die ganze Zeit,Ab und zu]",,"{
+  ""dayFullness"": {
+    ""float"": ""50.0"",
+    ""integer"": null,
+    ""provided"": ""float""
+  }
+}",4,"{
+  ""__key__"": {
+    ""namespace"": """",
+    ""app"": ""e~mentalport-dev"",
+    ""path"": ""\""users\"", \""FkpxsnbsaeX8PCN16qUGAD8TC9v1\"", \""moodData\"", \""QfL5fcHfs4E7l2DwU4Gy\"""",
+    ""kind"": ""moodData"",
+    ""name"": ""QfL5fcHfs4E7l2DwU4Gy"",
+    ""id"": null
+  }
+}",[],false
+[],2022-06-24 12:07:40.557000 UTC,"{
+  ""moodRating"": {
+    ""float"": ""50.0"",
+    ""integer"": null,
+    ""provided"": ""float""
+  }
+}",[],,"{
+  ""dayFullness"": {
+    ""float"": ""50.0"",
+    ""integer"": null,
+    ""provided"": ""float""
+  }
+}",4,"{
+  ""__key__"": {
+    ""namespace"": """",
+    ""app"": ""e~mentalport-dev"",
+    ""path"": ""\""users\"", \""FkpxsnbsaeX8PCN16qUGAD8TC9v1\"", \""moodData\"", \""SEHn7nw4224u8oaaKmdL\"""",
+    ""kind"": ""moodData"",
+    ""name"": ""SEHn7nw4224u8oaaKmdL"",
+    ""id"": null
+  }
+}",[],false
+[],2022-05-29 22:00:00.000000 UTC,"{
+  ""moodRating"": {
+    ""float"": ""50.0"",
+    ""integer"": null,
+    ""provided"": ""float""
+  }
+}","[Die ganze Zeit,Die ganze Zeit,Die ganze Zeit,Die ganze Zeit,Die ganze Zeit]",,"{
+  ""dayFullness"": {
+    ""float"": ""50.0"",
+    ""integer"": null,
+    ""provided"": ""float""
+  }
+}",4,"{
+  ""__key__"": {
+    ""namespace"": """",
+    ""app"": ""e~mentalport-dev"",
+    ""path"": ""\""users\"", \""FkpxsnbsaeX8PCN16qUGAD8TC9v1\"", \""moodData\"", \""m7xJzZKfQENkccBQzenz\"""",
+    ""kind"": ""moodData"",
+    ""name"": ""m7xJzZKfQENkccBQzenz"",
+    ""id"": null
+  }
+}",[],false
+[],2022-05-31 15:14:14.579000 UTC,"{
+  ""moodRating"": {
+    ""float"": ""50.0"",
+    ""integer"": null,
+    ""provided"": ""float""
+  }
+}",[],,"{
+  ""dayFullness"": {
+    ""float"": ""50.0"",
+    ""integer"": null,
+    ""provided"": ""float""
+  }
+}",4,"{
+  ""__key__"": {
+    ""namespace"": """",
+    ""app"": ""e~mentalport-dev"",
+    ""path"": ""\""users\"", \""FkpxsnbsaeX8PCN16qUGAD8TC9v1\"", \""moodData\"", \""uTZyXzImmGpCzGUGVgDc\"""",
+    ""kind"": ""moodData"",
+    ""name"": ""uTZyXzImmGpCzGUGVgDc"",
+    ""id"": null
+  }
+}",[],false
+[],2022-06-21 15:38:47.595000 UTC,"{
+  ""moodRating"": {
+    ""float"": ""50.0"",
+    ""integer"": null,
+    ""provided"": ""float""
+  }
+}",[],,"{
+  ""dayFullness"": {
+    ""float"": ""50.0"",
+    ""integer"": null,
+    ""provided"": ""float""
+  }
+}",4,"{
+  ""__key__"": {
+    ""namespace"": """",
+    ""app"": ""e~mentalport-dev"",
+    ""path"": ""\""users\"", \""FkpxsnbsaeX8PCN16qUGAD8TC9v1\"", \""moodData\"", \""xHJWtfZSes2vGP1iw0nk\"""",
+    ""kind"": ""moodData"",
+    ""name"": ""xHJWtfZSes2vGP1iw0nk"",
+    ""id"": null
+  }
+}",[],false
+[],2022-06-09 07:39:28.566000 UTC,"{
+  ""moodRating"": {
+    ""float"": ""50.0"",
+    ""integer"": null,
+    ""provided"": ""float""
+  }
+}","[Etwas mehr als die Hälfte der Zeit,Ab und zu,Etwas weniger als die Hälfte der Zeit,Ab und zu,Ab und zu]",,"{
+  ""dayFullness"": {
+    ""float"": ""90.046296296296376"",
+    ""integer"": null,
+    ""provided"": ""float""
+  }
+}",2,"{
+  ""__key__"": {
+    ""namespace"": """",
+    ""app"": ""e~mentalport-dev"",
+    ""path"": ""\""users\"", \""JGQ6NKOVxCfZUzQ7yz3sUt3FiQu1\"", \""moodData\"", \""t1ClyrJMKJuVhcMzHUEX\"""",
+    ""kind"": ""moodData"",
+    ""name"": ""t1ClyrJMKJuVhcMzHUEX"",
+    ""id"": null
+  }
+}",[],false
+[],2022-06-09 10:21:54.994000 UTC,"{
+  ""moodRating"": {
+    ""float"": ""50.0"",
+    ""integer"": null,
+    ""provided"": ""float""
+  }
+}","[Etwas mehr als die Hälfte der Zeit,Meistens,Meistens,Meistens,Etwas mehr als die Hälfte der Zeit]",,"{
+  ""dayFullness"": {
+    ""float"": ""50.0"",
+    ""integer"": null,
+    ""provided"": ""float""
+  }
+}",4,"{
+  ""__key__"": {
+    ""namespace"": """",
+    ""app"": ""e~mentalport-dev"",
+    ""path"": ""\""users\"", \""dPtnunEV9uXQQvWZ7oeLRRyuHfG3\"", \""moodData\"", \""Es5PbVDdEyv0aUkL7YA8\"""",
+    ""kind"": ""moodData"",
+    ""name"": ""Es5PbVDdEyv0aUkL7YA8"",
+    ""id"": null
+  }
+}",[],false
+[],2022-10-28 07:45:06.718000 UTC,"{
+  ""moodRating"": {
+    ""float"": ""50.0"",
+    ""integer"": null,
+    ""provided"": ""float""
+  }
+}","[Meistens,Etwas mehr als die Hälfte der Zeit,Etwas weniger als die Hälfte der Zeit,Die ganze Zeit,Etwas weniger als die Hälfte der Zeit]",,"{
+  ""dayFullness"": {
+    ""float"": ""50.0"",
+    ""integer"": null,
+    ""provided"": ""float""
+  }
+}",4,"{
+  ""__key__"": {
+    ""namespace"": """",
+    ""app"": ""e~mentalport-dev"",
+    ""path"": ""\""users\"", \""dPtnunEV9uXQQvWZ7oeLRRyuHfG3\"", \""moodData\"", \""cLW8UMQ5wEtduGRSGsWh\"""",
+    ""kind"": ""moodData"",
+    ""name"": ""cLW8UMQ5wEtduGRSGsWh"",
+    ""id"": null
+  }
+}",[],false
+[],2022-06-06 11:38:11.124000 UTC,"{
+  ""moodRating"": {
+    ""float"": ""50.0"",
+    ""integer"": null,
+    ""provided"": ""float""
+  }
+}","[Meistens,Etwas mehr als die Hälfte der Zeit,Ab und zu,Etwas weniger als die Hälfte der Zeit,Etwas mehr als die Hälfte der Zeit]",,"{
+  ""dayFullness"": {
+    ""float"": ""50.0"",
+    ""integer"": null,
+    ""provided"": ""float""
+  }
+}",3,"{
+  ""__key__"": {
+    ""namespace"": """",
+    ""app"": ""e~mentalport-dev"",
+    ""path"": ""\""users\"", \""fHrkNtaGFIWyO2t5BPfa1vfU76R2\"", \""moodData\"", \""2YQIA5q2yVXOOw764G80\"""",
+    ""kind"": ""moodData"",
+    ""name"": ""2YQIA5q2yVXOOw764G80"",
+    ""id"": null
+  }
+}",[],false
+[],2022-06-11 22:27:57.104000 UTC,"{
+  ""moodRating"": {
+    ""float"": ""50.0"",
+    ""integer"": null,
+    ""provided"": ""float""
+  }
+}",[],,"{
+  ""dayFullness"": {
+    ""float"": ""50.0"",
+    ""integer"": null,
+    ""provided"": ""float""
+  }
+}",4,"{
+  ""__key__"": {
+    ""namespace"": """",
+    ""app"": ""e~mentalport-dev"",
+    ""path"": ""\""users\"", \""fHrkNtaGFIWyO2t5BPfa1vfU76R2\"", \""moodData\"", \""5OhL6DRuHcWKDtqNZJwN\"""",
+    ""kind"": ""moodData"",
+    ""name"": ""5OhL6DRuHcWKDtqNZJwN"",
+    ""id"": null
+  }
+}",[],false
+[],2022-09-12 22:00:00.000000 UTC,"{
+  ""moodRating"": {
+    ""float"": ""50.0"",
+    ""integer"": null,
+    ""provided"": ""float""
+  }
+}","[Die ganze Zeit,Meistens,Ab und zu,Etwas weniger als die Hälfte der Zeit,Die ganze Zeit]",,"{
+  ""dayFullness"": {
+    ""float"": ""50.0"",
+    ""integer"": null,
+    ""provided"": ""float""
+  }
+}",3,"{
+  ""__key__"": {
+    ""namespace"": """",
+    ""app"": ""e~mentalport-dev"",
+    ""path"": ""\""users\"", \""fHrkNtaGFIWyO2t5BPfa1vfU76R2\"", \""moodData\"", \""JyKz311YyJvOrl9XxxG0\"""",
+    ""kind"": ""moodData"",
+    ""name"": ""JyKz311YyJvOrl9XxxG0"",
+    ""id"": null
+  }
+}",[],false
+[],2022-06-28 15:07:41.709000 UTC,"{
+  ""moodRating"": {
+    ""float"": ""50.0"",
+    ""integer"": null,
+    ""provided"": ""float""
+  }
+}","[Meistens,Meistens,Meistens,Meistens,Meistens]",,"{
+  ""dayFullness"": {
+    ""float"": ""50.0"",
+    ""integer"": null,
+    ""provided"": ""float""
+  }
+}",4,"{
+  ""__key__"": {
+    ""namespace"": """",
+    ""app"": ""e~mentalport-dev"",
+    ""path"": ""\""users\"", \""fHrkNtaGFIWyO2t5BPfa1vfU76R2\"", \""moodData\"", \""cKNb7d2mZj5yol2qur4N\"""",
+    ""kind"": ""moodData"",
+    ""name"": ""cKNb7d2mZj5yol2qur4N"",
+    ""id"": null
+  }
+}",[],false
+[],2022-05-31 13:31:04.190000 UTC,"{
+  ""moodRating"": {
+    ""float"": ""50.0"",
+    ""integer"": null,
+    ""provided"": ""float""
+  }
+}",[],,"{
+  ""dayFullness"": {
+    ""float"": ""50.0"",
+    ""integer"": null,
+    ""provided"": ""float""
+  }
+}",4,"{
+  ""__key__"": {
+    ""namespace"": """",
+    ""app"": ""e~mentalport-dev"",
+    ""path"": ""\""users\"", \""fHrkNtaGFIWyO2t5BPfa1vfU76R2\"", \""moodData\"", \""law7BuMbDXLAu4xXgy8O\"""",
+    ""kind"": ""moodData"",
+    ""name"": ""law7BuMbDXLAu4xXgy8O"",
+    ""id"": null
+  }
+}",[],false
+[],2022-05-31 10:03:29.508000 UTC,"{
+  ""moodRating"": {
+    ""float"": ""50.0"",
+    ""integer"": null,
+    ""provided"": ""float""
+  }
+}","[Die ganze Zeit,Meistens,Etwas mehr als die Hälfte der Zeit,Etwas weniger als die Hälfte der Zeit,Zu keinem Zeitpunkt]",,"{
+  ""dayFullness"": {
+    ""float"": ""50.0"",
+    ""integer"": null,
+    ""provided"": ""float""
+  }
+}",5,"{
+  ""__key__"": {
+    ""namespace"": """",
+    ""app"": ""e~mentalport-dev"",
+    ""path"": ""\""users\"", \""fHrkNtaGFIWyO2t5BPfa1vfU76R2\"", \""moodData\"", \""trCNactVWn7t1E0dS2of\"""",
+    ""kind"": ""moodData"",
+    ""name"": ""trCNactVWn7t1E0dS2of"",
+    ""id"": null
+  }
+}",[],false
+[],2022-06-11 22:25:49.556000 UTC,"{
+  ""moodRating"": {
+    ""float"": ""50.0"",
+    ""integer"": null,
+    ""provided"": ""float""
+  }
+}",[],,"{
+  ""dayFullness"": {
+    ""float"": ""68.9484126984127"",
+    ""integer"": null,
+    ""provided"": ""float""
+  }
+}",4,"{
+  ""__key__"": {
+    ""namespace"": """",
+    ""app"": ""e~mentalport-dev"",
+    ""path"": ""\""users\"", \""fHrkNtaGFIWyO2t5BPfa1vfU76R2\"", \""moodData\"", \""vBqbDPuyiahVXMm3f4Ud\"""",
+    ""kind"": ""moodData"",
+    ""name"": ""vBqbDPuyiahVXMm3f4Ud"",
+    ""id"": null
+  }
+}",[],false
+[],2022-06-28 15:07:00.197000 UTC,"{
+  ""moodRating"": {
+    ""float"": ""50.0"",
+    ""integer"": null,
+    ""provided"": ""float""
+  }
+}","[Meistens,Meistens,Meistens,Meistens,Meistens]",,"{
+  ""dayFullness"": {
+    ""float"": ""50.0"",
+    ""integer"": null,
+    ""provided"": ""float""
+  }
+}",4,"{
+  ""__key__"": {
+    ""namespace"": """",
+    ""app"": ""e~mentalport-dev"",
+    ""path"": ""\""users\"", \""fHrkNtaGFIWyO2t5BPfa1vfU76R2\"", \""moodData\"", \""y7Phe6WJWjbUwuwHHvJd\"""",
+    ""kind"": ""moodData"",
+    ""name"": ""y7Phe6WJWjbUwuwHHvJd"",
+    ""id"": null
+  }
+}",[],false
+[],2022-06-28 15:25:38.380000 UTC,"{
+  ""moodRating"": {
+    ""float"": ""50.0"",
+    ""integer"": null,
+    ""provided"": ""float""
+  }
+}",[],,"{
+  ""dayFullness"": {
+    ""float"": ""50.0"",
+    ""integer"": null,
+    ""provided"": ""float""
+  }
+}",5,"{
+  ""__key__"": {
+    ""namespace"": """",
+    ""app"": ""e~mentalport-dev"",
+    ""path"": ""\""users\"", \""fHrkNtaGFIWyO2t5BPfa1vfU76R2\"", \""moodData\"", \""ylbIXNf252YL1DoJbXTs\"""",
+    ""kind"": ""moodData"",
+    ""name"": ""ylbIXNf252YL1DoJbXTs"",
+    ""id"": null
+  }
+}",[],false
+[],2022-05-31 10:44:21.395000 UTC,"{
+  ""moodRating"": {
+    ""float"": ""50.0"",
+    ""integer"": null,
+    ""provided"": ""float""
+  }
+}","[Die ganze Zeit,Meistens,Etwas mehr als die Hälfte der Zeit,Etwas weniger als die Hälfte der Zeit,Zu keinem Zeitpunkt,Die ganze Zeit,Meistens,Die ganze Zeit,Meistens,Die ganze Zeit,Die ganze Zeit,Meistens,Etwas mehr als die Hälfte der Zeit,Etwas weniger als die Hälfte der Zeit,Etwas weniger als die Hälfte der Zeit,Die ganze Zeit,Meistens,Etwas mehr als die Hälfte der Zeit,Etwas weniger als die Hälfte der Zeit,Ab und zu]",jfj,"{
+  ""dayFullness"": {
+    ""float"": ""50.0"",
+    ""integer"": null,
+    ""provided"": ""float""
+  }
+}",4,"{
+  ""__key__"": {
+    ""namespace"": """",
+    ""app"": ""e~mentalport-dev"",
+    ""path"": ""\""users\"", \""sBiEjDKG8AeMsSt6d3fzaBUNiEr1\"", \""moodData\"", \""xyNTtL3n2ViSnkAUYZkp\"""",
+    ""kind"": ""moodData"",
+    ""name"": ""xyNTtL3n2ViSnkAUYZkp"",
+    ""id"": null
+  }
+}",[],false
+[],2022-05-31 15:15:09.547000 UTC,"{
+  ""moodRating"": {
+    ""float"": ""100.0"",
+    ""integer"": null,
+    ""provided"": ""float""
+  }
+}",[],,"{
+  ""dayFullness"": {
+    ""float"": ""100.0"",
+    ""integer"": null,
+    ""provided"": ""float""
+  }
+}",4,"{
+  ""__key__"": {
+    ""namespace"": """",
+    ""app"": ""e~mentalport-dev"",
+    ""path"": ""\""users\"", \""FkpxsnbsaeX8PCN16qUGAD8TC9v1\"", \""moodData\"", \""6uXGIo1Xb5WbyALtf65K\"""",
+    ""kind"": ""moodData"",
+    ""name"": ""6uXGIo1Xb5WbyALtf65K"",
+    ""id"": null
+  }
+}",[],false
+[],2022-08-12 08:56:38.803000 UTC,"{
+  ""moodRating"": {
+    ""float"": ""100.0"",
+    ""integer"": null,
+    ""provided"": ""float""
+  }
+}","[Etwas weniger als die Hälfte der Zeit,Meistens,Etwas mehr als die Hälfte der Zeit,Die ganze Zeit,Die ganze Zeit,Die ganze Zeit,Meistens,Die ganze Zeit,Ab und zu,Etwas weniger als die Hälfte der Zeit]",,"{
+  ""dayFullness"": {
+    ""float"": ""50.0"",
+    ""integer"": null,
+    ""provided"": ""float""
+  }
+}",1,"{
+  ""__key__"": {
+    ""namespace"": """",
+    ""app"": ""e~mentalport-dev"",
+    ""path"": ""\""users\"", \""eDDjveNPG2fKrvVupwL6W7fGIcz2\"", \""moodData\"", \""P5x8QUi4QlCtQEQnsopi\"""",
+    ""kind"": ""moodData"",
+    ""name"": ""P5x8QUi4QlCtQEQnsopi"",
+    ""id"": null
+  }
+}",[],false
+[],2022-06-27 22:35:12.951000 UTC,"{
+  ""moodRating"": {
+    ""float"": ""100.0"",
+    ""integer"": null,
+    ""provided"": ""float""
+  }
+}",[],,"{
+  ""dayFullness"": {
+    ""float"": ""50.0"",
+    ""integer"": null,
+    ""provided"": ""float""
+  }
+}",5,"{
+  ""__key__"": {
+    ""namespace"": """",
+    ""app"": ""e~mentalport-dev"",
+    ""path"": ""\""users\"", \""fHrkNtaGFIWyO2t5BPfa1vfU76R2\"", \""moodData\"", \""1W4vaentHLvta3jhNRcf\"""",
+    ""kind"": ""moodData"",
+    ""name"": ""1W4vaentHLvta3jhNRcf"",
+    ""id"": null
+  }
+}",[],false
+[],2022-06-27 22:34:52.428000 UTC,"{
+  ""moodRating"": {
+    ""float"": ""100.0"",
+    ""integer"": null,
+    ""provided"": ""float""
+  }
+}",[],,"{
+  ""dayFullness"": {
+    ""float"": ""0.0"",
+    ""integer"": null,
+    ""provided"": ""float""
+  }
+}",5,"{
+  ""__key__"": {
+    ""namespace"": """",
+    ""app"": ""e~mentalport-dev"",
+    ""path"": ""\""users\"", \""fHrkNtaGFIWyO2t5BPfa1vfU76R2\"", \""moodData\"", \""DmI7jFpxkCCWLmDUODwF\"""",
+    ""kind"": ""moodData"",
+    ""name"": ""DmI7jFpxkCCWLmDUODwF"",
+    ""id"": null
+  }
+}",[],false
+[],2022-06-03 22:00:00.000000 UTC,"{
+  ""moodRating"": {
+    ""float"": ""100.0"",
+    ""integer"": null,
+    ""provided"": ""float""
+  }
+}",[],,"{
+  ""dayFullness"": {
+    ""float"": ""0.0"",
+    ""integer"": null,
+    ""provided"": ""float""
+  }
+}",5,"{
+  ""__key__"": {
+    ""namespace"": """",
+    ""app"": ""e~mentalport-dev"",
+    ""path"": ""\""users\"", \""fHrkNtaGFIWyO2t5BPfa1vfU76R2\"", \""moodData\"", \""JwOiRwk47LjTFeMDlw6u\"""",
+    ""kind"": ""moodData"",
+    ""name"": ""JwOiRwk47LjTFeMDlw6u"",
+    ""id"": null
+  }
+}",[],false
+[],2022-06-13 12:36:55.552000 UTC,"{
+  ""moodRating"": {
+    ""float"": ""100.0"",
+    ""integer"": null,
+    ""provided"": ""float""
+  }
+}",[],,"{
+  ""dayFullness"": {
+    ""float"": ""50.0"",
+    ""integer"": null,
+    ""provided"": ""float""
+  }
+}",3,"{
+  ""__key__"": {
+    ""namespace"": """",
+    ""app"": ""e~mentalport-dev"",
+    ""path"": ""\""users\"", \""fHrkNtaGFIWyO2t5BPfa1vfU76R2\"", \""moodData\"", \""KTHUg5z06xl00PuFIBXT\"""",
+    ""kind"": ""moodData"",
+    ""name"": ""KTHUg5z06xl00PuFIBXT"",
+    ""id"": null
+  }
+}",[],false
+[],2022-07-03 07:09:31.676000 UTC,"{
+  ""moodRating"": {
+    ""float"": ""100.0"",
+    ""integer"": null,
+    ""provided"": ""float""
+  }
+}",[],,"{
+  ""dayFullness"": {
+    ""float"": ""50.0"",
+    ""integer"": null,
+    ""provided"": ""float""
+  }
+}",4,"{
+  ""__key__"": {
+    ""namespace"": """",
+    ""app"": ""e~mentalport-dev"",
+    ""path"": ""\""users\"", \""fHrkNtaGFIWyO2t5BPfa1vfU76R2\"", \""moodData\"", \""LEouzXxabCnFDSebVLlv\"""",
+    ""kind"": ""moodData"",
+    ""name"": ""LEouzXxabCnFDSebVLlv"",
+    ""id"": null
+  }
+}",[],false
+[],2022-06-18 15:43:46.441000 UTC,"{
+  ""moodRating"": {
+    ""float"": ""100.0"",
+    ""integer"": null,
+    ""provided"": ""float""
+  }
+}",[],,"{
+  ""dayFullness"": {
+    ""float"": ""50.0"",
+    ""integer"": null,
+    ""provided"": ""float""
+  }
+}",4,"{
+  ""__key__"": {
+    ""namespace"": """",
+    ""app"": ""e~mentalport-dev"",
+    ""path"": ""\""users\"", \""fHrkNtaGFIWyO2t5BPfa1vfU76R2\"", \""moodData\"", \""MlPSQEYRgO77oGnMGrbW\"""",
+    ""kind"": ""moodData"",
+    ""name"": ""MlPSQEYRgO77oGnMGrbW"",
+    ""id"": null
+  }
+}",[],false
+[],2022-05-31 17:19:57.503000 UTC,"{
+  ""moodRating"": {
+    ""float"": ""100.0"",
+    ""integer"": null,
+    ""provided"": ""float""
+  }
+}","[Die ganze Zeit,Die ganze Zeit,Die ganze Zeit,Die ganze Zeit,Die ganze Zeit,Meistens,Meistens,Meistens,Meistens,Meistens,Die ganze Zeit,Etwas mehr als die Hälfte der Zeit,Meistens,Etwas weniger als die Hälfte der Zeit,Ab und zu,Die ganze Zeit,Meistens,Etwas weniger als die Hälfte der Zeit,Die ganze Zeit,Meistens,Die ganze Zeit,Die ganze Zeit,Die ganze Zeit,Die ganze Zeit,Die ganze Zeit]",,"{
+  ""dayFullness"": {
+    ""float"": ""50.0"",
+    ""integer"": null,
+    ""provided"": ""float""
+  }
+}",5,"{
+  ""__key__"": {
+    ""namespace"": """",
+    ""app"": ""e~mentalport-dev"",
+    ""path"": ""\""users\"", \""fHrkNtaGFIWyO2t5BPfa1vfU76R2\"", \""moodData\"", \""OahFu4rLvE4DZvekORtM\"""",
+    ""kind"": ""moodData"",
+    ""name"": ""OahFu4rLvE4DZvekORtM"",
+    ""id"": null
+  }
+}",[],false
+[],2022-06-29 14:10:27.941000 UTC,"{
+  ""moodRating"": {
+    ""float"": ""100.0"",
+    ""integer"": null,
+    ""provided"": ""float""
+  }
+}",[],,"{
+  ""dayFullness"": {
+    ""float"": ""50.0"",
+    ""integer"": null,
+    ""provided"": ""float""
+  }
+}",4,"{
+  ""__key__"": {
+    ""namespace"": """",
+    ""app"": ""e~mentalport-dev"",
+    ""path"": ""\""users\"", \""fHrkNtaGFIWyO2t5BPfa1vfU76R2\"", \""moodData\"", \""RyxgaWoSiwPB1p0I6TYd\"""",
+    ""kind"": ""moodData"",
+    ""name"": ""RyxgaWoSiwPB1p0I6TYd"",
+    ""id"": null
+  }
+}",[],false
+[],2022-06-15 15:49:42.367000 UTC,"{
+  ""moodRating"": {
+    ""float"": ""100.0"",
+    ""integer"": null,
+    ""provided"": ""float""
+  }
+}",[],,"{
+  ""dayFullness"": {
+    ""float"": ""50.0"",
+    ""integer"": null,
+    ""provided"": ""float""
+  }
+}",5,"{
+  ""__key__"": {
+    ""namespace"": """",
+    ""app"": ""e~mentalport-dev"",
+    ""path"": ""\""users\"", \""fHrkNtaGFIWyO2t5BPfa1vfU76R2\"", \""moodData\"", \""SLqp5BC381tlBbNGMptT\"""",
+    ""kind"": ""moodData"",
+    ""name"": ""SLqp5BC381tlBbNGMptT"",
+    ""id"": null
+  }
+}",[],false
+[],2022-06-28 22:18:57.935000 UTC,"{
+  ""moodRating"": {
+    ""float"": ""100.0"",
+    ""integer"": null,
+    ""provided"": ""float""
+  }
+}",[],,"{
+  ""dayFullness"": {
+    ""float"": ""50.0"",
+    ""integer"": null,
+    ""provided"": ""float""
+  }
+}",5,"{
+  ""__key__"": {
+    ""namespace"": """",
+    ""app"": ""e~mentalport-dev"",
+    ""path"": ""\""users\"", \""fHrkNtaGFIWyO2t5BPfa1vfU76R2\"", \""moodData\"", \""Z2N2DXPlxo9MkHIzxCEO\"""",
+    ""kind"": ""moodData"",
+    ""name"": ""Z2N2DXPlxo9MkHIzxCEO"",
+    ""id"": null
+  }
+}",[],false
+[],2022-07-05 06:15:12.889000 UTC,"{
+  ""moodRating"": {
+    ""float"": ""100.0"",
+    ""integer"": null,
+    ""provided"": ""float""
+  }
+}",[],,"{
+  ""dayFullness"": {
+    ""float"": ""50.0"",
+    ""integer"": null,
+    ""provided"": ""float""
+  }
+}",5,"{
+  ""__key__"": {
+    ""namespace"": """",
+    ""app"": ""e~mentalport-dev"",
+    ""path"": ""\""users\"", \""fHrkNtaGFIWyO2t5BPfa1vfU76R2\"", \""moodData\"", \""Z3TPFQCaqFAXRi0oO3ch\"""",
+    ""kind"": ""moodData"",
+    ""name"": ""Z3TPFQCaqFAXRi0oO3ch"",
+    ""id"": null
+  }
+}",[],false
+[],2022-05-30 15:52:25.982000 UTC,"{
+  ""moodRating"": {
+    ""float"": ""100.0"",
+    ""integer"": null,
+    ""provided"": ""float""
+  }
+}","[Meistens,Etwas mehr als die Hälfte der Zeit,Etwas weniger als die Hälfte der Zeit,Ab und zu,Meistens]",,"{
+  ""dayFullness"": {
+    ""float"": ""67.8902116402116"",
+    ""integer"": null,
+    ""provided"": ""float""
+  }
+}",5,"{
+  ""__key__"": {
+    ""namespace"": """",
+    ""app"": ""e~mentalport-dev"",
+    ""path"": ""\""users\"", \""fHrkNtaGFIWyO2t5BPfa1vfU76R2\"", \""moodData\"", \""eTjzdWhUKpII0OQozj3j\"""",
+    ""kind"": ""moodData"",
+    ""name"": ""eTjzdWhUKpII0OQozj3j"",
+    ""id"": null
+  }
+}",[],false
+[],2022-06-02 23:40:35.394000 UTC,"{
+  ""moodRating"": {
+    ""float"": ""100.0"",
+    ""integer"": null,
+    ""provided"": ""float""
+  }
+}","[Meistens,Meistens,Ab und zu,Etwas weniger als die Hälfte der Zeit,Meistens]",Ein Festival steht an und ich freue mich darauf. Außerdem geht es mit der App vorwärts. Leider bin ich momentan in der Entwicklung mehr oder weniger allein und wir brauchen dringend Unterstützung,"{
+  ""dayFullness"": {
+    ""float"": ""33.7632275132276"",
+    ""integer"": null,
+    ""provided"": ""float""
+  }
+}",5,"{
+  ""__key__"": {
+    ""namespace"": """",
+    ""app"": ""e~mentalport-dev"",
+    ""path"": ""\""users\"", \""fHrkNtaGFIWyO2t5BPfa1vfU76R2\"", \""moodData\"", \""ipbUzI19ldPfoO65LOhK\"""",
+    ""kind"": ""moodData"",
+    ""name"": ""ipbUzI19ldPfoO65LOhK"",
+    ""id"": null
+  }
+}",[],false
+[],2022-06-02 01:26:27.517000 UTC,"{
+  ""moodRating"": {
+    ""float"": ""100.0"",
+    ""integer"": null,
+    ""provided"": ""float""
+  }
+}","[Meistens,Meistens,Ab und zu,Etwas weniger als die Hälfte der Zeit,Meistens]",,"{
+  ""dayFullness"": {
+    ""float"": ""36.937830687830761"",
+    ""integer"": null,
+    ""provided"": ""float""
+  }
+}",5,"{
+  ""__key__"": {
+    ""namespace"": """",
+    ""app"": ""e~mentalport-dev"",
+    ""path"": ""\""users\"", \""fHrkNtaGFIWyO2t5BPfa1vfU76R2\"", \""moodData\"", \""muWyLhruL7nvZeD7gORf\"""",
+    ""kind"": ""moodData"",
+    ""name"": ""muWyLhruL7nvZeD7gORf"",
+    ""id"": null
+  }
+}",[],false
+[],2022-06-11 22:25:31.362000 UTC,"{
+  ""moodRating"": {
+    ""float"": ""100.0"",
+    ""integer"": null,
+    ""provided"": ""float""
+  }
+}",[],,"{
+  ""dayFullness"": {
+    ""float"": ""30.588624338624381"",
+    ""integer"": null,
+    ""provided"": ""float""
+  }
+}",5,"{
+  ""__key__"": {
+    ""namespace"": """",
+    ""app"": ""e~mentalport-dev"",
+    ""path"": ""\""users\"", \""fHrkNtaGFIWyO2t5BPfa1vfU76R2\"", \""moodData\"", \""rw0wlNNTP6zaXTdwMHBI\"""",
+    ""kind"": ""moodData"",
+    ""name"": ""rw0wlNNTP6zaXTdwMHBI"",
+    ""id"": null
+  }
+}",[],false
+[],2022-05-15 22:00:00.000000 UTC,"{
+  ""moodRating"": {
+    ""float"": ""100.0"",
+    ""integer"": null,
+    ""provided"": ""float""
+  }
+}","[Die ganze Zeit,Die ganze Zeit,Die ganze Zeit,Die ganze Zeit,Die ganze Zeit,Meistens,Meistens,Meistens,Meistens,Meistens,Die ganze Zeit,Etwas mehr als die Hälfte der Zeit,Meistens,Etwas weniger als die Hälfte der Zeit,Ab und zu,Die ganze Zeit,Meistens,Etwas weniger als die Hälfte der Zeit,Die ganze Zeit,Meistens,Die ganze Zeit,Die ganze Zeit,Die ganze Zeit,Die ganze Zeit,Die ganze Zeit,Die ganze Zeit,Etwas mehr als die Hälfte der Zeit,Meistens,Ab und zu,Die ganze Zeit]",,"{
+  ""dayFullness"": {
+    ""float"": ""50.0"",
+    ""integer"": null,
+    ""provided"": ""float""
+  }
+}",5,"{
+  ""__key__"": {
+    ""namespace"": """",
+    ""app"": ""e~mentalport-dev"",
+    ""path"": ""\""users\"", \""fHrkNtaGFIWyO2t5BPfa1vfU76R2\"", \""moodData\"", \""wwaTZaD5SBzUQrJ1sDj8\"""",
+    ""kind"": ""moodData"",
+    ""name"": ""wwaTZaD5SBzUQrJ1sDj8"",
+    ""id"": null
+  }
+}",[],false
+[],2022-05-31 10:49:45.187000 UTC,"{
+  ""moodRating"": {
+    ""float"": ""100.0"",
+    ""integer"": null,
+    ""provided"": ""float""
+  }
+}","[Die ganze Zeit,Meistens,Etwas weniger als die Hälfte der Zeit,Etwas mehr als die Hälfte der Zeit,Die ganze Zeit]",,"{
+  ""dayFullness"": {
+    ""float"": ""50.0"",
+    ""integer"": null,
+    ""provided"": ""float""
+  }
+}",5,"{
+  ""__key__"": {
+    ""namespace"": """",
+    ""app"": ""e~mentalport-dev"",
+    ""path"": ""\""users\"", \""sBiEjDKG8AeMsSt6d3fzaBUNiEr1\"", \""moodData\"", \""rpwzjQPWRmIiPq9fxJot\"""",
+    ""kind"": ""moodData"",
+    ""name"": ""rpwzjQPWRmIiPq9fxJot"",
+    ""id"": null
+  }
+}",[],false
+[],2022-05-29 20:00:00.000000 UTC,"{
+  ""moodRating"": {
+    ""float"": ""71.5"",
+    ""integer"": null,
+    ""provided"": ""float""
+  }
+}","[Meistens,Meistens,Meistens,Meistens,Meistens]",Test,"{
+  ""dayFullness"": {
+    ""float"": ""34.7"",
+    ""integer"": null,
+    ""provided"": ""float""
+  }
+}",4,"{
+  ""__key__"": {
+    ""namespace"": """",
+    ""app"": ""e~mentalport-dev"",
+    ""path"": ""\""users\"", \""fHrkNtaGFIWyO2t5BPfa1vfU76R2\"", \""moodData\"", \""QNTB1vOs4wWLdiVAUod9\"""",
+    ""kind"": ""moodData"",
+    ""name"": ""QNTB1vOs4wWLdiVAUod9"",
+    ""id"": null
+  }
+}",[],false
+[],2022-06-15 10:12:41.809000 UTC,"{
+  ""moodRating"": {
+    ""float"": ""76.557445526123047"",
+    ""integer"": null,
+    ""provided"": ""float""
+  }
+}","[Meistens,Etwas mehr als die Hälfte der Zeit,Meistens,Meistens,Meistens]",,"{
+  ""dayFullness"": {
+    ""float"": ""82.798777686225051"",
+    ""integer"": null,
+    ""provided"": ""float""
+  }
+}",4,"{
+  ""__key__"": {
+    ""namespace"": """",
+    ""app"": ""e~mentalport-dev"",
+    ""path"": ""\""users\"", \""dPtnunEV9uXQQvWZ7oeLRRyuHfG3\"", \""moodData\"", \""Ssa26rJyPdUBYA2Z1BHd\"""",
+    ""kind"": ""moodData"",
+    ""name"": ""Ssa26rJyPdUBYA2Z1BHd"",
+    ""id"": null
+  }
+}",[],false
+[],2022-06-10 08:18:29.101000 UTC,"{
+  ""moodRating"": {
+    ""float"": ""60.351562500000114"",
+    ""integer"": null,
+    ""provided"": ""float""
+  }
+}","[Ab und zu,Ab und zu,Etwas mehr als die Hälfte der Zeit,Etwas mehr als die Hälfte der Zeit,Etwas mehr als die Hälfte der Zeit]",,"{
+  ""dayFullness"": {
+    ""float"": ""56.705729166666785"",
+    ""integer"": null,
+    ""provided"": ""float""
+  }
+}",3,"{
+  ""__key__"": {
+    ""namespace"": """",
+    ""app"": ""e~mentalport-dev"",
+    ""path"": ""\""users\"", \""7yg7efXymicQuHb0SpeN24frBl62\"", \""moodData\"", \""JtwajXEmoHJbYkC9hAFw\"""",
+    ""kind"": ""moodData"",
+    ""name"": ""JtwajXEmoHJbYkC9hAFw"",
+    ""id"": null
+  }
+}",[],false
+[],2022-06-10 08:19:43.939000 UTC,"{
+  ""moodRating"": {
+    ""float"": ""60.351562500000114"",
+    ""integer"": null,
+    ""provided"": ""float""
+  }
+}","[Ab und zu,Ab und zu,Etwas mehr als die Hälfte der Zeit,Etwas mehr als die Hälfte der Zeit,Etwas mehr als die Hälfte der Zeit]",,"{
+  ""dayFullness"": {
+    ""float"": ""56.705729166666785"",
+    ""integer"": null,
+    ""provided"": ""float""
+  }
+}",3,"{
+  ""__key__"": {
+    ""namespace"": """",
+    ""app"": ""e~mentalport-dev"",
+    ""path"": ""\""users\"", \""7yg7efXymicQuHb0SpeN24frBl62\"", \""moodData\"", \""pzqY4piB3m5DhP9hcyuL\"""",
+    ""kind"": ""moodData"",
+    ""name"": ""pzqY4piB3m5DhP9hcyuL"",
+    ""id"": null
+  }
+}",[],false
+[],2022-06-27 22:34:27.634000 UTC,"{
+  ""moodRating"": {
+    ""float"": ""54.133597883597872"",
+    ""integer"": null,
+    ""provided"": ""float""
+  }
+}",[],,"{
+  ""dayFullness"": {
+    ""float"": ""50.0"",
+    ""integer"": null,
+    ""provided"": ""float""
+  }
+}",4,"{
+  ""__key__"": {
+    ""namespace"": """",
+    ""app"": ""e~mentalport-dev"",
+    ""path"": ""\""users\"", \""fHrkNtaGFIWyO2t5BPfa1vfU76R2\"", \""moodData\"", \""j0oFkBrDkAsqE9klnECo\"""",
+    ""kind"": ""moodData"",
+    ""name"": ""j0oFkBrDkAsqE9klnECo"",
+    ""id"": null
+  }
+}",[],false
+[],2022-05-10 22:00:00.000000 UTC,"{
+  ""moodRating"": {
+    ""float"": ""70.271164021163955"",
+    ""integer"": null,
+    ""provided"": ""float""
+  }
+}","[Die ganze Zeit,Die ganze Zeit,Die ganze Zeit,Die ganze Zeit,Die ganze Zeit,Meistens,Meistens,Meistens,Meistens,Meistens,Die ganze Zeit,Etwas mehr als die Hälfte der Zeit,Meistens,Etwas weniger als die Hälfte der Zeit,Ab und zu]",,"{
+  ""dayFullness"": {
+    ""float"": ""70.535714285714263"",
+    ""integer"": null,
+    ""provided"": ""float""
+  }
+}",4,"{
+  ""__key__"": {
+    ""namespace"": """",
+    ""app"": ""e~mentalport-dev"",
+    ""path"": ""\""users\"", \""fHrkNtaGFIWyO2t5BPfa1vfU76R2\"", \""moodData\"", \""FUQSzXa3paKHZ5D60Zi2\"""",
+    ""kind"": ""moodData"",
+    ""name"": ""FUQSzXa3paKHZ5D60Zi2"",
+    ""id"": null
+  }
+}",[],false
+[],2022-06-28 15:03:43.263000 UTC,"{
+  ""moodRating"": {
+    ""float"": ""75.297619047618966"",
+    ""integer"": null,
+    ""provided"": ""float""
+  }
+}","[Meistens,Meistens,Meistens,Meistens,Meistens]",,"{
+  ""dayFullness"": {
+    ""float"": ""41.9642857142857"",
+    ""integer"": null,
+    ""provided"": ""float""
+  }
+}",4,"{
+  ""__key__"": {
+    ""namespace"": """",
+    ""app"": ""e~mentalport-dev"",
+    ""path"": ""\""users\"", \""fHrkNtaGFIWyO2t5BPfa1vfU76R2\"", \""moodData\"", \""iRvRHG31JuPUdS8Zlcoa\"""",
+    ""kind"": ""moodData"",
+    ""name"": ""iRvRHG31JuPUdS8Zlcoa"",
+    ""id"": null
+  }
+}",[],false
+[],2022-10-05 09:22:45.546000 UTC,"{
+  ""moodRating"": {
+    ""float"": ""68.86337742660973"",
+    ""integer"": null,
+    ""provided"": ""float""
+  }
+}","[Etwas mehr als die Hälfte der Zeit,Etwas weniger als die Hälfte der Zeit,Etwas mehr als die Hälfte der Zeit,Etwas weniger als die Hälfte der Zeit,Etwas mehr als die Hälfte der Zeit]",,"{
+  ""dayFullness"": {
+    ""float"": ""50.0"",
+    ""integer"": null,
+    ""provided"": ""float""
+  }
+}",4,"{
+  ""__key__"": {
+    ""namespace"": """",
+    ""app"": ""e~mentalport-dev"",
+    ""path"": ""\""users\"", \""Z8bUAhTvXuRVTg979HcjtFfHWpx2\"", \""moodData\"", \""e5odqfzw824Sc9Q34YeY\"""",
+    ""kind"": ""moodData"",
+    ""name"": ""e5odqfzw824Sc9Q34YeY"",
+    ""id"": null
+  }
+}",[],false
+[],2022-06-29 22:14:17.580000 UTC,"{
+  ""moodRating"": {
+    ""float"": ""80.059523809523739"",
+    ""integer"": null,
+    ""provided"": ""float""
+  }
+}",[],,"{
+  ""dayFullness"": {
+    ""float"": ""91.96428571428568"",
+    ""integer"": null,
+    ""provided"": ""float""
+  }
+}",4,"{
+  ""__key__"": {
+    ""namespace"": """",
+    ""app"": ""e~mentalport-dev"",
+    ""path"": ""\""users\"", \""fHrkNtaGFIWyO2t5BPfa1vfU76R2\"", \""moodData\"", \""q8YQzyXaopqzGirI998Y\"""",
+    ""kind"": ""moodData"",
+    ""name"": ""q8YQzyXaopqzGirI998Y"",
+    ""id"": null
+  }
+}",[],false
+[],2022-06-09 22:00:34.056000 UTC,"{
+  ""moodRating"": {
+    ""float"": ""80.0595238095238"",
+    ""integer"": null,
+    ""provided"": ""float""
+  }
+}","[Meistens,Meistens,Etwas weniger als die Hälfte der Zeit,Ab und zu,Meistens]",,"{
+  ""dayFullness"": {
+    ""float"": ""85.085978835978835"",
+    ""integer"": null,
+    ""provided"": ""float""
+  }
+}",4,"{
+  ""__key__"": {
+    ""namespace"": """",
+    ""app"": ""e~mentalport-dev"",
+    ""path"": ""\""users\"", \""fHrkNtaGFIWyO2t5BPfa1vfU76R2\"", \""moodData\"", \""s41f3ojsKhir0tCPZht7\"""",
+    ""kind"": ""moodData"",
+    ""name"": ""s41f3ojsKhir0tCPZht7"",
+    ""id"": null
+  }
+}",[],false
+[],2022-05-31 15:44:01.976000 UTC,"{
+  ""moodRating"": {
+    ""float"": ""45.004044638739721"",
+    ""integer"": null,
+    ""provided"": ""float""
+  }
+}","[Etwas mehr als die Hälfte der Zeit,Ab und zu,Ab und zu,Etwas weniger als die Hälfte der Zeit,Meistens]",,"{
+  ""dayFullness"": {
+    ""float"": ""75.517219967312244"",
+    ""integer"": null,
+    ""provided"": ""float""
+  }
+}",5,"{
+  ""__key__"": {
+    ""namespace"": """",
+    ""app"": ""e~mentalport-dev"",
+    ""path"": ""\""users\"", \""T942BvfXrDOpYC7HBzdh00sWbCm2\"", \""moodData\"", \""okoLfYDwRpRqXiBh91Gc\"""",
+    ""kind"": ""moodData"",
+    ""name"": ""okoLfYDwRpRqXiBh91Gc"",
+    ""id"": null
+  }
+}",[],false
+[],2022-06-07 08:27:53.749000 UTC,"{
+  ""moodRating"": {
+    ""float"": ""71.06481481481481"",
+    ""integer"": null,
+    ""provided"": ""float""
+  }
+}","[Meistens,Meistens,Etwas weniger als die Hälfte der Zeit,Etwas weniger als die Hälfte der Zeit,Etwas mehr als die Hälfte der Zeit]",,"{
+  ""dayFullness"": {
+    ""float"": ""50.0"",
+    ""integer"": null,
+    ""provided"": ""float""
+  }
+}",4,"{
+  ""__key__"": {
+    ""namespace"": """",
+    ""app"": ""e~mentalport-dev"",
+    ""path"": ""\""users\"", \""fHrkNtaGFIWyO2t5BPfa1vfU76R2\"", \""moodData\"", \""6NsNwtynNPYXUx1oFyyh\"""",
+    ""kind"": ""moodData"",
+    ""name"": ""6NsNwtynNPYXUx1oFyyh"",
+    ""id"": null
+  }
+}",[],false
+[],2022-06-09 08:49:36.293000 UTC,"{
+  ""moodRating"": {
+    ""float"": ""71.329365079365076"",
+    ""integer"": null,
+    ""provided"": ""float""
+  }
+}",[],,"{
+  ""dayFullness"": {
+    ""float"": ""50.0"",
+    ""integer"": null,
+    ""provided"": ""float""
+  }
+}",4,"{
+  ""__key__"": {
+    ""namespace"": """",
+    ""app"": ""e~mentalport-dev"",
+    ""path"": ""\""users\"", \""fHrkNtaGFIWyO2t5BPfa1vfU76R2\"", \""moodData\"", \""2gcZdw2ZWl5lcVAkZNuI\"""",
+    ""kind"": ""moodData"",
+    ""name"": ""2gcZdw2ZWl5lcVAkZNuI"",
+    ""id"": null
+  }
+}",[],false
+[],2022-05-31 15:09:57.586000 UTC,"{
+  ""moodRating"": {
+    ""float"": ""71.32936507936509"",
+    ""integer"": null,
+    ""provided"": ""float""
+  }
+}","[Die ganze Zeit,Meistens,Etwas weniger als die Hälfte der Zeit,Die ganze Zeit,Etwas mehr als die Hälfte der Zeit]",jdh,"{
+  ""dayFullness"": {
+    ""float"": ""100.0"",
+    ""integer"": null,
+    ""provided"": ""float""
+  }
+}",4,"{
+  ""__key__"": {
+    ""namespace"": """",
+    ""app"": ""e~mentalport-dev"",
+    ""path"": ""\""users\"", \""fHrkNtaGFIWyO2t5BPfa1vfU76R2\"", \""moodData\"", \""BJPwt30m9Lo5WUe2PT4X\"""",
+    ""kind"": ""moodData"",
+    ""name"": ""BJPwt30m9Lo5WUe2PT4X"",
+    ""id"": null
+  }
+}",[],false
+[],2022-07-06 07:43:28.988000 UTC,"{
+  ""moodRating"": {
+    ""float"": ""86.078042328042386"",
+    ""integer"": null,
+    ""provided"": ""float""
+  }
+}",[],,"{
+  ""dayFullness"": {
+    ""float"": ""50.0"",
+    ""integer"": null,
+    ""provided"": ""float""
+  }
+}",4,"{
+  ""__key__"": {
+    ""namespace"": """",
+    ""app"": ""e~mentalport-dev"",
+    ""path"": ""\""users\"", \""fHrkNtaGFIWyO2t5BPfa1vfU76R2\"", \""moodData\"", \""XUuXzWyEQj4mFRfPTtJd\"""",
+    ""kind"": ""moodData"",
+    ""name"": ""XUuXzWyEQj4mFRfPTtJd"",
+    ""id"": null
+  }
+}",[],false
+[],2022-05-30 22:00:00.000000 UTC,"{
+  ""moodRating"": {
+    ""float"": ""29.400714238484717"",
+    ""integer"": null,
+    ""provided"": ""float""
+  }
+}",[],,"{
+  ""dayFullness"": {
+    ""float"": ""50.0"",
+    ""integer"": null,
+    ""provided"": ""float""
+  }
+}",1,"{
+  ""__key__"": {
+    ""namespace"": """",
+    ""app"": ""e~mentalport-dev"",
+    ""path"": ""\""users\"", \""ykeu2QJNW4WaOMZd0em1h5PUz6a2\"", \""moodData\"", \""NCae6BeV55T7XBYbDVnl\"""",
+    ""kind"": ""moodData"",
+    ""name"": ""NCae6BeV55T7XBYbDVnl"",
+    ""id"": null
+  }
+}",[],false
+[],2022-09-21 21:05:39.100000 UTC,"{
+  ""moodRating"": {
+    ""float"": ""86.607142857142861"",
+    ""integer"": null,
+    ""provided"": ""float""
+  }
+}","[Die ganze Zeit,Meistens,Ab und zu,Etwas weniger als die Hälfte der Zeit,Die ganze Zeit]",,"{
+  ""dayFullness"": {
+    ""float"": ""50.0"",
+    ""integer"": null,
+    ""provided"": ""float""
+  }
+}",4,"{
+  ""__key__"": {
+    ""namespace"": """",
+    ""app"": ""e~mentalport-dev"",
+    ""path"": ""\""users\"", \""fHrkNtaGFIWyO2t5BPfa1vfU76R2\"", \""moodData\"", \""2hIcnjluh3blKfTE7kAT\"""",
+    ""kind"": ""moodData"",
+    ""name"": ""2hIcnjluh3blKfTE7kAT"",
+    ""id"": null
+  }
+}",[],false
+[],2022-06-19 10:21:54.887000 UTC,"{
+  ""moodRating"": {
+    ""float"": ""85.615079365079282"",
+    ""integer"": null,
+    ""provided"": ""float""
+  }
+}",[],,"{
+  ""dayFullness"": {
+    ""float"": ""50.0"",
+    ""integer"": null,
+    ""provided"": ""float""
+  }
+}",4,"{
+  ""__key__"": {
+    ""namespace"": """",
+    ""app"": ""e~mentalport-dev"",
+    ""path"": ""\""users\"", \""fHrkNtaGFIWyO2t5BPfa1vfU76R2\"", \""moodData\"", \""Eic6WeoNRVqI1CZtpPh1\"""",
+    ""kind"": ""moodData"",
+    ""name"": ""Eic6WeoNRVqI1CZtpPh1"",
+    ""id"": null
+  }
+}",[],false
+[],2022-06-19 11:09:34.089000 UTC,"{
+  ""moodRating"": {
+    ""float"": ""60.954115125868057"",
+    ""integer"": null,
+    ""provided"": ""float""
+  }
+}","[Meistens,Meistens,Meistens,Meistens,Etwas mehr als die Hälfte der Zeit]",,"{
+  ""dayFullness"": {
+    ""float"": ""50.0"",
+    ""integer"": null,
+    ""provided"": ""float""
+  }
+}",3,"{
+  ""__key__"": {
+    ""namespace"": """",
+    ""app"": ""e~mentalport-dev"",
+    ""path"": ""\""users\"", \""dPtnunEV9uXQQvWZ7oeLRRyuHfG3\"", \""moodData\"", \""Jc25DehAh7J7vgjoEHSD\"""",
+    ""kind"": ""moodData"",
+    ""name"": ""Jc25DehAh7J7vgjoEHSD"",
+    ""id"": null
+  }
+}",[],false
+[],2022-06-07 22:05:46.674000 UTC,"{
+  ""moodRating"": {
+    ""float"": ""85.879629629629662"",
+    ""integer"": null,
+    ""provided"": ""float""
+  }
+}",[],,"{
+  ""dayFullness"": {
+    ""float"": ""68.154761904761813"",
+    ""integer"": null,
+    ""provided"": ""float""
+  }
+}",4,"{
+  ""__key__"": {
+    ""namespace"": """",
+    ""app"": ""e~mentalport-dev"",
+    ""path"": ""\""users\"", \""fHrkNtaGFIWyO2t5BPfa1vfU76R2\"", \""moodData\"", \""0hNWy2U2Rj3tQgJcjVbU\"""",
+    ""kind"": ""moodData"",
+    ""name"": ""0hNWy2U2Rj3tQgJcjVbU"",
+    ""id"": null
+  }
+}",[],false
+[],2022-06-01 20:17:52.674000 UTC,"{
+  ""moodRating"": {
+    ""float"": ""56.944444444444429"",
+    ""integer"": null,
+    ""provided"": ""float""
+  }
+}",[Etwas weniger als die Hälfte der Zeit],,"{
+  ""dayFullness"": {
+    ""float"": ""74.999999999999929"",
+    ""integer"": null,
+    ""provided"": ""float""
+  }
+}",3,"{
+  ""__key__"": {
+    ""namespace"": """",
+    ""app"": ""e~mentalport-dev"",
+    ""path"": ""\""users\"", \""rcR1tzCQaBXDTvU3j2PbaMAcKS82\"", \""moodData\"", \""1NLMH7ggcG4LpmvlyXbu\"""",
+    ""kind"": ""moodData"",
+    ""name"": ""1NLMH7ggcG4LpmvlyXbu"",
+    ""id"": null
+  }
+}",[],false
+[],2022-09-02 14:03:58.357000 UTC,"{
+  ""moodRating"": {
+    ""float"": ""67.013888888888872"",
+    ""integer"": null,
+    ""provided"": ""float""
+  }
+}","[Etwas mehr als die Hälfte der Zeit,Meistens,Meistens,Die ganze Zeit,Etwas mehr als die Hälfte der Zeit]",,"{
+  ""dayFullness"": {
+    ""float"": ""79.5138888888888"",
+    ""integer"": null,
+    ""provided"": ""float""
+  }
+}",3,"{
+  ""__key__"": {
+    ""namespace"": """",
+    ""app"": ""e~mentalport-dev"",
+    ""path"": ""\""users\"", \""7Fw8xlJ8BBPi6hEFZfKlde8x4Bg1\"", \""moodData\"", \""3Xuy50M67w7V3EkIhZWw\"""",
+    ""kind"": ""moodData"",
+    ""name"": ""3Xuy50M67w7V3EkIhZWw"",
+    ""id"": null
+  }
+}",[],false
+[],2022-05-31 20:34:26.886000 UTC,"{
+  ""moodRating"": {
+    ""float"": ""53.325822618272568"",
+    ""integer"": null,
+    ""provided"": ""float""
+  }
+}",[],,"{
+  ""dayFullness"": {
+    ""float"": ""54.712793562147276"",
+    ""integer"": null,
+    ""provided"": ""float""
+  }
+}",3,"{
+  ""__key__"": {
+    ""namespace"": """",
+    ""app"": ""e~mentalport-dev"",
+    ""path"": ""\""users\"", \""T942BvfXrDOpYC7HBzdh00sWbCm2\"", \""moodData\"", \""WHZE5tbQmAFNCkzOIW10\"""",
+    ""kind"": ""moodData"",
+    ""name"": ""WHZE5tbQmAFNCkzOIW10"",
+    ""id"": null
+  }
+}",[],false
+[],2022-06-05 14:10:32.977000 UTC,"{
+  ""moodRating"": {
+    ""float"": ""78.165690104166657"",
+    ""integer"": null,
+    ""provided"": ""float""
+  }
+}","[Etwas mehr als die Hälfte der Zeit,Etwas mehr als die Hälfte der Zeit,Etwas mehr als die Hälfte der Zeit,Etwas mehr als die Hälfte der Zeit,Etwas mehr als die Hälfte der Zeit,Etwas mehr als die Hälfte der Zeit,Ab und zu,Meistens,Ab und zu,Ab und zu]",,"{
+  ""dayFullness"": {
+    ""float"": ""85.123697916666671"",
+    ""integer"": null,
+    ""provided"": ""float""
+  }
+}",4,"{
+  ""__key__"": {
+    ""namespace"": """",
+    ""app"": ""e~mentalport-dev"",
+    ""path"": ""\""users\"", \""Fu3F3RVYDfXxnLGuWjulhU8WsKr2\"", \""moodData\"", \""Alv8WN6j76LtZLeJhH3a\"""",
+    ""kind"": ""moodData"",
+    ""name"": ""Alv8WN6j76LtZLeJhH3a"",
+    ""id"": null
+  }
+}",[],false
+[],2022-05-12 22:00:00.000000 UTC,"{
+  ""moodRating"": {
+    ""float"": ""39.583333333333364"",
+    ""integer"": null,
+    ""provided"": ""float""
+  }
+}","[Die ganze Zeit,Die ganze Zeit,Die ganze Zeit,Die ganze Zeit,Die ganze Zeit,Meistens,Meistens,Meistens,Meistens,Meistens,Die ganze Zeit,Etwas mehr als die Hälfte der Zeit,Meistens,Etwas weniger als die Hälfte der Zeit,Ab und zu,Die ganze Zeit,Meistens,Etwas weniger als die Hälfte der Zeit,Die ganze Zeit,Meistens]",,"{
+  ""dayFullness"": {
+    ""float"": ""50.0"",
+    ""integer"": null,
+    ""provided"": ""float""
+  }
+}",2,"{
+  ""__key__"": {
+    ""namespace"": """",
+    ""app"": ""e~mentalport-dev"",
+    ""path"": ""\""users\"", \""fHrkNtaGFIWyO2t5BPfa1vfU76R2\"", \""moodData\"", \""pa1GyEurMt7pXO64IA8i\"""",
+    ""kind"": ""moodData"",
+    ""name"": ""pa1GyEurMt7pXO64IA8i"",
+    ""id"": null
+  }
+}",[],false
+[],2022-07-01 06:28:53.302000 UTC,"{
+  ""moodRating"": {
+    ""float"": ""73.181216931216881"",
+    ""integer"": null,
+    ""provided"": ""float""
+  }
+}","[Meistens,Meistens,Etwas weniger als die Hälfte der Zeit,Etwas weniger als die Hälfte der Zeit,Etwas mehr als die Hälfte der Zeit]",,"{
+  ""dayFullness"": {
+    ""float"": ""100.0"",
+    ""integer"": null,
+    ""provided"": ""float""
+  }
+}",4,"{
+  ""__key__"": {
+    ""namespace"": """",
+    ""app"": ""e~mentalport-dev"",
+    ""path"": ""\""users\"", \""fHrkNtaGFIWyO2t5BPfa1vfU76R2\"", \""moodData\"", \""zclI3fPKOPACGR8FDJrz\"""",
+    ""kind"": ""moodData"",
+    ""name"": ""zclI3fPKOPACGR8FDJrz"",
+    ""id"": null
+  }
+}",[],false
+[],2022-07-04 06:26:07.265000 UTC,"{
+  ""moodRating"": {
+    ""float"": ""91.435185185185119"",
+    ""integer"": null,
+    ""provided"": ""float""
+  }
+}",[],,"{
+  ""dayFullness"": {
+    ""float"": ""50.0"",
+    ""integer"": null,
+    ""provided"": ""float""
+  }
+}",5,"{
+  ""__key__"": {
+    ""namespace"": """",
+    ""app"": ""e~mentalport-dev"",
+    ""path"": ""\""users\"", \""fHrkNtaGFIWyO2t5BPfa1vfU76R2\"", \""moodData\"", \""1OCtoyNzJmbwbT7UoQ4B\"""",
+    ""kind"": ""moodData"",
+    ""name"": ""1OCtoyNzJmbwbT7UoQ4B"",
+    ""id"": null
+  }
+}",[],false
+[],2022-06-19 10:22:34.639000 UTC,"{
+  ""moodRating"": {
+    ""float"": ""91.435185185185176"",
+    ""integer"": null,
+    ""provided"": ""float""
+  }
+}",[],,"{
+  ""dayFullness"": {
+    ""float"": ""50.0"",
+    ""integer"": null,
+    ""provided"": ""float""
+  }
+}",4,"{
+  ""__key__"": {
+    ""namespace"": """",
+    ""app"": ""e~mentalport-dev"",
+    ""path"": ""\""users\"", \""fHrkNtaGFIWyO2t5BPfa1vfU76R2\"", \""moodData\"", \""gebHYVPe6ElI0XI1iHBP\"""",
+    ""kind"": ""moodData"",
+    ""name"": ""gebHYVPe6ElI0XI1iHBP"",
+    ""id"": null
+  }
+}",[],false
+[],2022-06-21 15:39:20.057000 UTC,"{
+  ""moodRating"": {
+    ""float"": ""55.720899470899475"",
+    ""integer"": null,
+    ""provided"": ""float""
+  }
+}",[],,"{
+  ""dayFullness"": {
+    ""float"": ""50.0"",
+    ""integer"": null,
+    ""provided"": ""float""
+  }
+}",4,"{
+  ""__key__"": {
+    ""namespace"": """",
+    ""app"": ""e~mentalport-dev"",
+    ""path"": ""\""users\"", \""fHrkNtaGFIWyO2t5BPfa1vfU76R2\"", \""moodData\"", \""Of3ir80IDrmXB5iM7E8A\"""",
+    ""kind"": ""moodData"",
+    ""name"": ""Of3ir80IDrmXB5iM7E8A"",
+    ""id"": null
+  }
+}",[],false
+[],2022-05-31 13:34:46.852000 UTC,"{
+  ""moodRating"": {
+    ""float"": ""40.149678124321831"",
+    ""integer"": null,
+    ""provided"": ""float""
+  }
+}","[Meistens,Ab und zu,Etwas weniger als die Hälfte der Zeit,Ab und zu,Etwas mehr als die Hälfte der Zeit]",,"{
+  ""dayFullness"": {
+    ""float"": ""86.959669325086821"",
+    ""integer"": null,
+    ""provided"": ""float""
+  }
+}",3,"{
+  ""__key__"": {
+    ""namespace"": """",
+    ""app"": ""e~mentalport-dev"",
+    ""path"": ""\""users\"", \""T942BvfXrDOpYC7HBzdh00sWbCm2\"", \""moodData\"", \""bZ4pqf4xThljICyUVAgw\"""",
+    ""kind"": ""moodData"",
+    ""name"": ""bZ4pqf4xThljICyUVAgw"",
+    ""id"": null
+  }
+}",[],false
+[],2022-07-02 07:05:04.132000 UTC,"{
+  ""moodRating"": {
+    ""float"": ""87.2023809523809"",
+    ""integer"": null,
+    ""provided"": ""float""
+  }
+}",[],,"{
+  ""dayFullness"": {
+    ""float"": ""50.0"",
+    ""integer"": null,
+    ""provided"": ""float""
+  }
+}",4,"{
+  ""__key__"": {
+    ""namespace"": """",
+    ""app"": ""e~mentalport-dev"",
+    ""path"": ""\""users\"", \""fHrkNtaGFIWyO2t5BPfa1vfU76R2\"", \""moodData\"", \""5OD79QgnMXobdjs4Vgr6\"""",
+    ""kind"": ""moodData"",
+    ""name"": ""5OD79QgnMXobdjs4Vgr6"",
+    ""id"": null
+  }
+}",[],false
+[],2022-05-31 22:20:26.159000 UTC,"{
+  ""moodRating"": {
+    ""float"": ""87.202380952380935"",
+    ""integer"": null,
+    ""provided"": ""float""
+  }
+}","[Meistens,Meistens,Ab und zu,Ab und zu,Etwas mehr als die Hälfte der Zeit]",,"{
+  ""dayFullness"": {
+    ""float"": ""94.874338624338819"",
+    ""integer"": null,
+    ""provided"": ""float""
+  }
+}",4,"{
+  ""__key__"": {
+    ""namespace"": """",
+    ""app"": ""e~mentalport-dev"",
+    ""path"": ""\""users\"", \""fHrkNtaGFIWyO2t5BPfa1vfU76R2\"", \""moodData\"", \""jMYbJS8HHiqsiA1AcQbq\"""",
+    ""kind"": ""moodData"",
+    ""name"": ""jMYbJS8HHiqsiA1AcQbq"",
+    ""id"": null
+  }
+}",[],false
+[],2022-09-22 17:15:29.475000 UTC,"{
+  ""moodRating"": {
+    ""float"": ""66.560291108630949"",
+    ""integer"": null,
+    ""provided"": ""float""
+  }
+}",[],,"{
+  ""dayFullness"": {
+    ""float"": ""50.0"",
+    ""integer"": null,
+    ""provided"": ""float""
+  }
+}",4,"{
+  ""__key__"": {
+    ""namespace"": """",
+    ""app"": ""e~mentalport-dev"",
+    ""path"": ""\""users\"", \""sBiEjDKG8AeMsSt6d3fzaBUNiEr1\"", \""moodData\"", \""0OwIHvc6R3sxxA0vmjQz\"""",
+    ""kind"": ""moodData"",
+    ""name"": ""0OwIHvc6R3sxxA0vmjQz"",
+    ""id"": null
+  }
+}",[],false
+[],2022-05-31 10:39:42.263000 UTC,"{
+  ""moodRating"": {
+    ""float"": ""69.212962962962948"",
+    ""integer"": null,
+    ""provided"": ""float""
+  }
+}","[Die ganze Zeit,Meistens,Etwas mehr als die Hälfte der Zeit,Etwas weniger als die Hälfte der Zeit,Zu keinem Zeitpunkt,Die ganze Zeit,Meistens,Die ganze Zeit,Meistens,Die ganze Zeit,Die ganze Zeit,Meistens,Etwas mehr als die Hälfte der Zeit,Etwas weniger als die Hälfte der Zeit,Etwas weniger als die Hälfte der Zeit]",,"{
+  ""dayFullness"": {
+    ""float"": ""50.0"",
+    ""integer"": null,
+    ""provided"": ""float""
+  }
+}",4,"{
+  ""__key__"": {
+    ""namespace"": """",
+    ""app"": ""e~mentalport-dev"",
+    ""path"": ""\""users\"", \""JWwoIvhhVzQBXU8kXiJea6XMvV63\"", \""moodData\"", \""jp9BAWXeK2FnqAjkWWGG\"""",
+    ""kind"": ""moodData"",
+    ""name"": ""jp9BAWXeK2FnqAjkWWGG"",
+    ""id"": null
+  }
+}",[],false
+"[entspannt,traurig,einsam,energiegeladen,ja,enthusiastisch,nervös,gefühllos,eher ja]",2022-05-09 12:47:22.093000 UTC,"{
+  ""moodRating"": {
+    ""float"": ""24.305555555555554"",
+    ""integer"": null,
+    ""provided"": ""float""
+  }
+}","[eher ja,eher nein,nein,ja]",ihh8iu,"{
+  ""dayFullness"": {
+    ""float"": ""42.361111111111107"",
+    ""integer"": null,
+    ""provided"": ""float""
+  }
+}",3,"{
+  ""__key__"": {
+    ""namespace"": """",
+    ""app"": ""e~mentalport-dev"",
+    ""path"": ""\""users\"", \""FkpxsnbsaeX8PCN16qUGAD8TC9v1\"", \""moodData\"", \""hXKL4JYdiUAvaGyQ1hMa\"""",
+    ""kind"": ""moodData"",
+    ""name"": ""hXKL4JYdiUAvaGyQ1hMa"",
+    ""id"": null
+  }
+}",[],false
+"[enthusiastisch,stolz,schuldig,gereizt,eher ja,eher nein,eher nein]",2022-05-06 22:00:00.000000 UTC,"{
+  ""moodRating"": {
+    ""float"": ""56.249999999999957"",
+    ""integer"": null,
+    ""provided"": ""float""
+  }
+}",[],jjgu,"{
+  ""dayFullness"": {
+    ""float"": ""83.333333333333243"",
+    ""integer"": null,
+    ""provided"": ""float""
+  }
+}",5,"{
+  ""__key__"": {
+    ""namespace"": """",
+    ""app"": ""e~mentalport-dev"",
+    ""path"": ""\""users\"", \""FkpxsnbsaeX8PCN16qUGAD8TC9v1\"", \""moodData\"", \""Fx2W0ET22BNEk0GvJyHS\"""",
+    ""kind"": ""moodData"",
+    ""name"": ""Fx2W0ET22BNEk0GvJyHS"",
+    ""id"": null
+  }
+}",[],false
+"[fokussiert,traurig,einsam]",2022-05-15 17:21:47.120000 UTC,"{
+  ""moodRating"": {
+    ""float"": ""78.124999999999929"",
+    ""integer"": null,
+    ""provided"": ""float""
+  }
+}","[eher ja,eher ja,eher ja]",gfh,"{
+  ""dayFullness"": {
+    ""float"": ""65.624999999999915"",
+    ""integer"": null,
+    ""provided"": ""float""
+  }
+}",4,"{
+  ""__key__"": {
+    ""namespace"": """",
+    ""app"": ""e~mentalport-dev"",
+    ""path"": ""\""users\"", \""FkpxsnbsaeX8PCN16qUGAD8TC9v1\"", \""moodData\"", \""OOcKNhqgqavPsrHk9uDv\"""",
+    ""kind"": ""moodData"",
+    ""name"": ""OOcKNhqgqavPsrHk9uDv"",
+    ""id"": null
+  }
+}",[],false
+[],2022-05-19 11:06:15.648000 UTC,"{
+  ""moodRating"": {
+    ""float"": null,
+    ""integer"": ""50"",
+    ""provided"": ""integer""
+  }
+}",[Die ganze Zeit],,"{
+  ""dayFullness"": {
+    ""float"": null,
+    ""integer"": ""50"",
+    ""provided"": ""integer""
+  }
+}",3,"{
+  ""__key__"": {
+    ""namespace"": """",
+    ""app"": ""e~mentalport-dev"",
+    ""path"": ""\""users\"", \""FkpxsnbsaeX8PCN16qUGAD8TC9v1\"", \""moodData\"", \""14ZtU9uNuAktXJRwVsMt\"""",
+    ""kind"": ""moodData"",
+    ""name"": ""14ZtU9uNuAktXJRwVsMt"",
+    ""id"": null
+  }
+}",[],false
+[],2022-05-16 12:50:59.169000 UTC,"{
+  ""moodRating"": {
+    ""float"": null,
+    ""integer"": ""50"",
+    ""provided"": ""integer""
+  }
+}","[4,4,4,4,4]",hdf,"{
+  ""dayFullness"": {
+    ""float"": null,
+    ""integer"": ""50"",
+    ""provided"": ""integer""
+  }
+}",1,"{
+  ""__key__"": {
+    ""namespace"": """",
+    ""app"": ""e~mentalport-dev"",
+    ""path"": ""\""users\"", \""FkpxsnbsaeX8PCN16qUGAD8TC9v1\"", \""moodData\"", \""KIrGZFKHtOZUy4oU2SVr\"""",
+    ""kind"": ""moodData"",
+    ""name"": ""KIrGZFKHtOZUy4oU2SVr"",
+    ""id"": null
+  }
+}",[],false
+[],2022-05-16 16:29:26.087000 UTC,"{
+  ""moodRating"": {
+    ""float"": null,
+    ""integer"": ""50"",
+    ""provided"": ""integer""
+  }
+}","[4,4,4,4,4]",dxh,"{
+  ""dayFullness"": {
+    ""float"": null,
+    ""integer"": ""50"",
+    ""provided"": ""integer""
+  }
+}",4,"{
+  ""__key__"": {
+    ""namespace"": """",
+    ""app"": ""e~mentalport-dev"",
+    ""path"": ""\""users\"", \""FkpxsnbsaeX8PCN16qUGAD8TC9v1\"", \""moodData\"", \""WCO2xEO5jGAfrvXpXTpY\"""",
+    ""kind"": ""moodData"",
+    ""name"": ""WCO2xEO5jGAfrvXpXTpY"",
+    ""id"": null
+  }
+}",[],false
+[],2022-06-27 10:22:44.664000 UTC,"{
+  ""moodRating"": {
+    ""float"": null,
+    ""integer"": ""50"",
+    ""provided"": ""integer""
+  }
+}",[],,"{
+  ""dayFullness"": {
+    ""float"": null,
+    ""integer"": ""50"",
+    ""provided"": ""integer""
+  }
+}",4,"{
+  ""__key__"": {
+    ""namespace"": """",
+    ""app"": ""e~mentalport-dev"",
+    ""path"": ""\""users\"", \""FkpxsnbsaeX8PCN16qUGAD8TC9v1\"", \""moodData\"", \""mkwWtCN25KICX1j1fV1R\"""",
+    ""kind"": ""moodData"",
+    ""name"": ""mkwWtCN25KICX1j1fV1R"",
+    ""id"": null
+  }
+}",[],false
+[],2022-05-19 11:46:51.223000 UTC,"{
+  ""moodRating"": {
+    ""float"": null,
+    ""integer"": ""50"",
+    ""provided"": ""integer""
+  }
+}","[Die ganze Zeit,Etwas weniger als die 
+ Hälfte der Zeit,Etwas mehr als die 
+ Hälfte der Zeit,Meistens,Ab und zu]",,"{
+  ""dayFullness"": {
+    ""float"": null,
+    ""integer"": ""50"",
+    ""provided"": ""integer""
+  }
+}",4,"{
+  ""__key__"": {
+    ""namespace"": """",
+    ""app"": ""e~mentalport-dev"",
+    ""path"": ""\""users\"", \""FkpxsnbsaeX8PCN16qUGAD8TC9v1\"", \""moodData\"", \""qewVi6rX662KRJLN47e1\"""",
+    ""kind"": ""moodData"",
+    ""name"": ""qewVi6rX662KRJLN47e1"",
+    ""id"": null
+  }
+}",[],false
+[],2022-05-31 22:00:00.000000 UTC,"{
+  ""moodRating"": {
+    ""float"": null,
+    ""integer"": ""50"",
+    ""provided"": ""integer""
+  }
+}","[Meistens,Meistens,Meistens,Meistens,Meistens]",,"{
+  ""dayFullness"": {
+    ""float"": null,
+    ""integer"": ""50"",
+    ""provided"": ""integer""
+  }
+}",4,"{
+  ""__key__"": {
+    ""namespace"": """",
+    ""app"": ""e~mentalport-dev"",
+    ""path"": ""\""users\"", \""JUEa2h1juZcAzE3AVRDCyl3gf0W2\"", \""moodData\"", \""HFflAUwCrDUSbtzq5qFQ\"""",
+    ""kind"": ""moodData"",
+    ""name"": ""HFflAUwCrDUSbtzq5qFQ"",
+    ""id"": null
+  }
+}",[],false
+[],2022-06-09 22:00:00.000000 UTC,"{
+  ""moodRating"": {
+    ""float"": ""18.750000000000075"",
+    ""integer"": null,
+    ""provided"": ""float""
+  }
+}",[],,"{
+  ""dayFullness"": {
+    ""float"": null,
+    ""integer"": ""50"",
+    ""provided"": ""integer""
+  }
+}",2,"{
+  ""__key__"": {
+    ""namespace"": """",
+    ""app"": ""e~mentalport-dev"",
+    ""path"": ""\""users\"", \""FkpxsnbsaeX8PCN16qUGAD8TC9v1\"", \""moodData\"", \""J3qCmLCXmG8HltxHH6et\"""",
+    ""kind"": ""moodData"",
+    ""name"": ""J3qCmLCXmG8HltxHH6et"",
+    ""id"": null
+  }
+}",[],false
+[],2022-05-20 14:20:49.023000 UTC,"{
+  ""moodRating"": {
+    ""float"": ""65.277777777777786"",
+    ""integer"": null,
+    ""provided"": ""float""
+  }
+}","[Die ganze Zeit,Ab und zu,Etwas weniger als die Hälfte der Zeit,Etwas mehr als die Hälfte der Zeit,Etwas weniger als die Hälfte der Zeit]",,"{
+  ""dayFullness"": {
+    ""float"": null,
+    ""integer"": ""50"",
+    ""provided"": ""integer""
+  }
+}",4,"{
+  ""__key__"": {
+    ""namespace"": """",
+    ""app"": ""e~mentalport-dev"",
+    ""path"": ""\""users\"", \""FkpxsnbsaeX8PCN16qUGAD8TC9v1\"", \""moodData\"", \""3clF18BnYmkCLJ0mAkGG\"""",
+    ""kind"": ""moodData"",
+    ""name"": ""3clF18BnYmkCLJ0mAkGG"",
+    ""id"": null
+  }
+}",[],false
+[],2022-05-16 13:06:44.409000 UTC,"{
+  ""moodRating"": {
+    ""float"": ""95.833333333333186"",
+    ""integer"": null,
+    ""provided"": ""float""
+  }
+}","[5,4,3,2,1]",hdf,"{
+  ""dayFullness"": {
+    ""float"": null,
+    ""integer"": ""50"",
+    ""provided"": ""integer""
+  }
+}",3,"{
+  ""__key__"": {
+    ""namespace"": """",
+    ""app"": ""e~mentalport-dev"",
+    ""path"": ""\""users\"", \""FkpxsnbsaeX8PCN16qUGAD8TC9v1\"", \""moodData\"", \""F1hOwxywpuoiI8DiQjrJ\"""",
+    ""kind"": ""moodData"",
+    ""name"": ""F1hOwxywpuoiI8DiQjrJ"",
+    ""id"": null
+  }
+}",[],false
+[],2022-06-21 11:58:38.472000 UTC,"{
+  ""moodRating"": {
+    ""float"": ""70.138888888888829"",
+    ""integer"": null,
+    ""provided"": ""float""
+  }
+}",[],,"{
+  ""dayFullness"": {
+    ""float"": null,
+    ""integer"": ""50"",
+    ""provided"": ""integer""
+  }
+}",4,"{
+  ""__key__"": {
+    ""namespace"": """",
+    ""app"": ""e~mentalport-dev"",
+    ""path"": ""\""users\"", \""FkpxsnbsaeX8PCN16qUGAD8TC9v1\"", \""moodData\"", \""MQ3wKOc5Xw66aE4XAYKc\"""",
+    ""kind"": ""moodData"",
+    ""name"": ""MQ3wKOc5Xw66aE4XAYKc"",
+    ""id"": null
+  }
+}",[],false
+[],2022-06-12 19:53:08.876000 UTC,"{
+  ""moodRating"": {
+    ""float"": ""59.722222222222207"",
+    ""integer"": null,
+    ""provided"": ""float""
+  }
+}","[Ab und zu,Etwas weniger als die Hälfte der Zeit,Etwas weniger als die Hälfte der Zeit,Ab und zu,Etwas mehr als die Hälfte der Zeit]",,"{
+  ""dayFullness"": {
+    ""float"": null,
+    ""integer"": ""50"",
+    ""provided"": ""integer""
+  }
+}",3,"{
+  ""__key__"": {
+    ""namespace"": """",
+    ""app"": ""e~mentalport-dev"",
+    ""path"": ""\""users\"", \""ejaLHjlT1WgoIeN3ERZBV6T81Xf1\"", \""moodData\"", \""aSqrE3B5Ba1JM6SXueGr\"""",
+    ""kind"": ""moodData"",
+    ""name"": ""aSqrE3B5Ba1JM6SXueGr"",
+    ""id"": null
+  }
+}",[],false
+[energiegeladen],2022-05-10 16:15:38.000000 UTC,"{
+  ""moodRating"": {
+    ""float"": null,
+    ""integer"": ""100"",
+    ""provided"": ""integer""
+  }
+}","[ja,ja,ja]",sddf,"{
+  ""dayFullness"": {
+    ""float"": null,
+    ""integer"": ""100"",
+    ""provided"": ""integer""
+  }
+}",4,"{
+  ""__key__"": {
+    ""namespace"": """",
+    ""app"": ""e~mentalport-dev"",
+    ""path"": ""\""users\"", \""FkpxsnbsaeX8PCN16qUGAD8TC9v1\"", \""moodData\"", \""UGPHykZqwTRFJ33xqBrw\"""",
+    ""kind"": ""moodData"",
+    ""name"": ""UGPHykZqwTRFJ33xqBrw"",
+    ""id"": null
+  }
+}",[],false
+"[selbstbewusst,energiegeladen,einsam]",2022-05-08 16:02:20.000000 UTC,"{
+  ""moodRating"": {
+    ""float"": null,
+    ""integer"": ""100"",
+    ""provided"": ""integer""
+  }
+}","[eher ja,eher ja,eher ja]",,"{
+  ""dayFullness"": {
+    ""float"": null,
+    ""integer"": ""100"",
+    ""provided"": ""integer""
+  }
+}",2,"{
+  ""__key__"": {
+    ""namespace"": """",
+    ""app"": ""e~mentalport-dev"",
+    ""path"": ""\""users\"", \""FkpxsnbsaeX8PCN16qUGAD8TC9v1\"", \""moodData\"", \""oiSrVekHBYajXYs5AH2N\"""",
+    ""kind"": ""moodData"",
+    ""name"": ""oiSrVekHBYajXYs5AH2N"",
+    ""id"": null
+  }
+}",[],false
