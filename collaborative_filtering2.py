@@ -24,15 +24,21 @@ pd.set_option('display.max_columns', None)
 exercises_df = pd.read_csv("C:\\Users\\roman\PycharmProjects\\semester_3\\mentalport_challenge\\mp_data-main\\mp_data\\exercise-original.csv")
 exerciseResults_df = pd.read_csv("C:\\Users\\roman\PycharmProjects\\semester_3\\mentalport_challenge\\mp_data-main\\mp_data\\exerciseResults.csv")
 users_df = pd.read_csv("C:\\Users\\roman\PycharmProjects\\semester_3\\mentalport_challenge\\mp_data-main\\mp_data\\users.csv")
+test = pd.read_csv("C:\\Users\\roman\PycharmProjects\\semester_3\\mentalport_challenge\\mp_data-main\\mp_data\\exercises.csv")
 
 #%%
 
-def getUser(df):
-    df["__key__user"] = exerciseResults_df["__key__"].apply(lambda x:
+def getUser_exerciseResults(df):
+    df["__key__user"] = df["__key__"].apply(lambda x:
         json.loads(x)["__key__"]["path"].replace(" ", "").replace("\"", "").split(",")[1]
     )
     return df["__key__user"]
 
+def getUser_users_df(df):
+    df["__key__user"] = df["__key__"].apply(lambda x:
+        json.loads(x)["__key__"]["name"]
+    )
+    return df["__key__user"]
 # def getExercise(df):
 #     df["__key__exercise"] = exerciseResults_df["__key__"].apply(lambda x:
 #         json.loads(x)["__key__"]["name"]
@@ -40,7 +46,7 @@ def getUser(df):
 #     return df["__key__exercise"]
 
 def getRating(df):
-    df["satisfaction"] = exerciseResults_df["feedback"].apply(lambda x:
+    df["satisfaction"] = df["feedback"].apply(lambda x:
         json.loads(x)["feedback"]["exerciseRating"]["satisfaction"]
     )
     df["satisfaction"] = df["satisfaction"].apply(lambda x:
@@ -51,9 +57,9 @@ def getRating(df):
 
 #%%
 
-users_df["__key__user"] = getUser(users_df)
+users_df["__key__user"] = getUser_users_df(users_df)
 
-exerciseResults_df["__key__user"] = getUser(exerciseResults_df)
+exerciseResults_df["__key__user"] = getUser_exerciseResults(exerciseResults_df)
 exerciseResults_df["satisfaction"] = getRating(exerciseResults_df)
 
 #%%
@@ -70,12 +76,8 @@ plt.show()
 
 
 #%%
-
-
-
-#%%
 def getTime(df):
-    df["endtime"] = exerciseResults_df["endTime"].apply(lambda x:
+    df["endtime"] = df["endTime"].apply(lambda x:
         json.loads(x)["endTime"]["date_time"]
     )
 
@@ -100,9 +102,23 @@ ratings = exerciseResults_df_unique[["__key__user","exerciseId" , "satisfaction"
 ratings
 
 
-
-
 #%%
 
 ratings_f2 = ratings.pivot(index = 'exerciseId', columns ='__key__user', values = 'satisfaction').fillna(0)
 ratings_f2.head(3)
+
+#%%
+# find users not yet in pivot table
+users_not_in_pivot = list(set(users_df.__key__user.unique()) - set(ratings_f2.columns))
+
+
+# rename Bez. column in exercises df to exerciseId
+exercises_df.rename(columns={"Bez.": "exerciseId"}, inplace=True)
+
+#remove all cases where exerciseId is nan
+#exercises_df = exercises_df[exercises_df.exerciseId.notna()]
+
+# find exercises not yet in pivot table
+exercises_not_in_pivot = list(set(exercises_df.exerciseId.unique()) - set(ratings_f2.index))
+
+
