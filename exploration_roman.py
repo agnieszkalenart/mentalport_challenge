@@ -32,3 +32,8 @@ routineItems = pd.read_csv(path_roman + "routineItems" + ".csv")
 
 #%%
 scheduledExercises = pd.read_csv(path_roman + "scheduledExercises" + ".csv")
+
+
+
+#%%
+# import a json dataset
