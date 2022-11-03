@@ -111,7 +111,6 @@ ratings_f2.head(3)
 # find users not yet in pivot table
 users_not_in_pivot = list(set(users_df.__key__user.unique()) - set(ratings_f2.columns))
 
-
 # rename Bez. column in exercises df to exerciseId
 exercises_df.rename(columns={"Bez.": "exerciseId"}, inplace=True)
 
@@ -121,4 +120,11 @@ exercises_df.rename(columns={"Bez.": "exerciseId"}, inplace=True)
 # find exercises not yet in pivot table
 exercises_not_in_pivot = list(set(exercises_df.exerciseId.unique()) - set(ratings_f2.index))
 
+# for all users not in pivot table, add a column with all zeros
+for user in users_not_in_pivot:
+    ratings_f2[user] = 0
+
+# for all exercises not in pivot table, add a row with all zeros
+for exercise in exercises_not_in_pivot:
+    ratings_f2.loc[exercise] = 0
 
