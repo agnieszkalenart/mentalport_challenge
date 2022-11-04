@@ -1,3 +1,7 @@
+"""
+File containing the sentiment analysis of optional text inputs by the user
+"""
+
 # standard library imports
 
 # 3rd party imports

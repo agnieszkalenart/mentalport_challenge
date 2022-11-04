@@ -1,5 +1,5 @@
 """
-This file contains useful functions for the project
+File containing useful functions for the project
 """
 
 # standard library imports

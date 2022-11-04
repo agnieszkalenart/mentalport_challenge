@@ -1,3 +1,7 @@
+"""
+File containing the gui
+"""
+
 # standard library imports
 from tkinter import *
 from tkinter import messagebox
