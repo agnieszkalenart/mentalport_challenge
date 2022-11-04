@@ -4,11 +4,47 @@ This file contains useful functions for the project
 
 # standard library imports
 import json
+import re
 
 # 3rd party imports
 import numpy as np
 
 
+#### helper functions for the filters ##################################################################################
+def preprocess_time(data, time_col):
+    """
+    TODO: Add docstring
+    :param data:
+    :param time_col: the name of the time column
+    :return:
+    """
+    pattern = re.compile("\d")
+    data[time_col] = data[time_col].fillna("0")
+    mapping = [((pattern.search(item) is not None)  == False) for item in data[time_col]]
+    data[time_col][mapping] = "0"
+    data[time_col] = [item.split('/')[-1] for item in data[time_col]]
+    data[time_col] = [item.split('*')[-1] for item in data[time_col]]
+    data[time_col] = [item.split('-')[0] for item in data[time_col]]
+    data[time_col].replace(to_replace="[A-Z]", value="", regex=True)
+    pattern3 = re.compile("[a-z]")
+    patternSpace = re.compile(" ")
+    data[time_col]= [re.sub(string = item, pattern=pattern3, repl ="") for item in data[time_col]]
+    data[time_col] = [re.sub(string = item, pattern=patternSpace, repl ="") for item in data[time_col]]
+    return data
+
+def filter_time (maxTime, data, time_col):
+    """
+
+    :param maxTime:
+    :param data:
+    :param time_col: the name of the time column
+    :return:
+    """
+    preprocess_time(data, time_col)
+    filtered_data = data[(data[time_col].astype(int)) < maxTime]
+    return filtered_data
+
+#### helper functions for collaborative filtering ######################################################################
 def get_user_exercise_results(df) -> np.ndarray:
     """
     Extracts the user_id from the exercise_results dataframe

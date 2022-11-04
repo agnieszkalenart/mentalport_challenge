@@ -1,5 +1,12 @@
+# standard library imports
+
+# 3rd party imports
 from happytransformer import HappyTextClassification
 
+# local imports (i.e. our own code)
+
+
+# define model
 model = HappyTextClassification(
     model_type="DISTILBERT",
     model_name="distilbert-base-uncased-finetuned-sst-2-english",
