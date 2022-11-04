@@ -79,15 +79,14 @@ ui_matrix_user_based_df = pd.DataFrame(
 ui_matrix = iu_matrix.T
 
 # store the user-item matrices (1. actual ratings, 2. item-based CF predictions, 3. user-based CF predictions)
-'''
-ui_matrix.to_csv("mp_data-main\\mp_data\\user-item-matrix.csv")
-ui_matrix_item_based_df.to_csv("mp_data-main\\mp_data\\user-predictions.csv")
-ui_matrix_user_based_df.to_csv("mp_data-main\\mp_data\\item-predictions.csv")
-'''
+
+ui_matrix.to_csv("mp_data-main\\out\\user-item-matrix.csv")
+ui_matrix_item_based_df.to_csv("mp_data-main\\out\\user-predictions.csv")
+ui_matrix_user_based_df.to_csv("mp_data-main\\out\\item-predictions.csv")
+
 
 
 #TODO:
-
 # remove unnecessary scripts
 # organize data repositories
 
