@@ -103,8 +103,8 @@ def train_one_epoch():
 
 if __name__ == "__main__":
     data = RecommenderDataset(
-        r"data\out\user-predictions.csv",
-        r"data\out\item-predictions.csv",
+        r"data\out\user-predictions-noclip.csv",
+        r"data\out\item-predictions-noclip.csv",
         r"data\out\content_based.csv",
         r"data\out\user-item-matrix.csv",
     )
@@ -127,7 +127,7 @@ if __name__ == "__main__":
 
         losses.append(avg_loss)
 
-    torch.save(model.state_dict(), "model.pt")
+    torch.save(model.state_dict(), "model_v2.pt")
 
     # losses = pd.DataFrame({"Epochs": range(EPOCHS), "RMSE": [sqrt(x) for x in losses]})
 
