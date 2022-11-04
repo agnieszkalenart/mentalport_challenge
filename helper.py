@@ -1,10 +1,15 @@
+"""
+This file contains useful functions for the project
+"""
+
 # standard library imports
 import json
 
 # 3rd party imports
 import numpy as np
 
-def get_user_exercise_results(df):
+
+def get_user_exercise_results(df) -> np.ndarray:
     """
     Extracts the user_id from the exercise_results dataframe
     :param df: the exercise_results dataframe
@@ -19,7 +24,7 @@ def get_user_exercise_results(df):
     #return df["user_id"]
 
 
-def get_user_users(df):
+def get_user_users(df) -> np.ndarray:
     """
     Extracts the user_id from the users dataframe
     :param df: the users dataframe
@@ -29,7 +34,7 @@ def get_user_users(df):
     #return df["user_id"]
 
 
-def get_satisfaction(df):
+def get_satisfaction(df) -> np.ndarray:
     """
     Extracts the satisfaction score from the exercise_results dataframe
     :param df: the exercise_results dataframe
@@ -44,7 +49,7 @@ def get_satisfaction(df):
     return sat
 
 
-def get_date(df):
+def get_date(df) -> np.ndarray:
     """
     Extracts the date from the exercise_results dataframe
     :param df: the exercise_results dataframe
@@ -55,7 +60,7 @@ def get_date(df):
     #return df["endtime"]
 
 
-def predict(ratings, similarity, mode="user"):
+def predict(ratings, similarity, mode="user") -> np.ndarray:
     """
     Creates the user or item based collaborative filtering prediction matrix
     :param ratings: The user-item matrix containing the ratings
