@@ -13,9 +13,9 @@ from sklearn.metrics.pairwise import pairwise_distances
 from helper import get_user_exercise_results, get_user_users, get_satisfaction, get_date, predict
 
 # import datasets
-exercises = pd.read_csv("mp_data-main\\mp_data\\exercise-original-fixed.csv")
-exercise_results = pd.read_csv("mp_data-main\\mp_data\\exerciseResults.csv")
-users = pd.read_csv("mp_data-main\\mp_data\\users.csv")
+exercises = pd.read_csv("data\\mp_data\\exercise-original-fixed.csv")
+exercise_results = pd.read_csv("data\\mp_data\\exerciseResults.csv")
+users = pd.read_csv("data\\mp_data\\users.csv")
 
 # extract user_ids
 users["user_id"] = get_user_users(users)
@@ -80,15 +80,8 @@ ui_matrix = iu_matrix.T
 
 # store the user-item matrices (1. actual ratings, 2. item-based CF predictions, 3. user-based CF predictions)
 
-ui_matrix.to_csv("mp_data-main\\out\\user-item-matrix.csv")
-ui_matrix_item_based_df.to_csv("mp_data-main\\out\\user-predictions.csv")
-ui_matrix_user_based_df.to_csv("mp_data-main\\out\\item-predictions.csv")
-
-
-
-#TODO:
-# remove unnecessary scripts
-# organize data repositories
-
-
-
+'''
+ui_matrix.to_csv("data\\out\\user-item-matrix.csv")
+ui_matrix_item_based_df.to_csv("data\\out\\user-predictions.csv")
+ui_matrix_user_based_df.to_csv("data\\out\\item-predictions.csv")
+'''

@@ -116,3 +116,5 @@ def predict(ratings, similarity, mode="user") -> np.ndarray:
             similarity
         ) / np.array([np.abs(similarity).sum(axis=1)])
     return np.clip(pred, a_min=0, a_max=5)
+
+
