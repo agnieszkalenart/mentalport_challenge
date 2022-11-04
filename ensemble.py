@@ -127,7 +127,7 @@ if __name__ == "__main__":
 
         losses.append(avg_loss)
 
-    torch.save(model.state_dict(), "models/model_v2.pt")
+    torch.save(model.state_dict(), "model_v2.pt")
 
     # losses = pd.DataFrame({"Epochs": range(EPOCHS), "RMSE": [sqrt(x) for x in losses]})
 
