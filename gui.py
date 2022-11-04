@@ -1,18 +1,13 @@
-"""
-File containing the gui
-"""
-
 # standard library imports
 from tkinter import *
 from tkinter import messagebox
 # 3rd party imports
 import customtkinter
-from happytransformer import HappyTextClassification
+import pandas as pd
+#from happytransformer import HappyTextClassification
 
 # local imports (i.e. our own code)
-
-
-
+from test import filter
 
 root = customtkinter.CTk()
 
@@ -23,10 +18,19 @@ customtkinter.set_default_color_theme("blue")  # Themes: blue (default), dark-bl
 root.geometry("1200x700")
 root.configure(bg='black')
 
+
 exercises = []
 needs = []
 
+model_data = pd.DataFrame(columns = ['ex_col', 'score_col'])
+model_data['ex_col'] = exercises['Bez.']
+model_data['score_col'] = [1 for i in range(len(model_data))]
+
+
+
 def evaluate_mood(mood_text):
+    pass
+    '''
     model = HappyTextClassification(
     model_type="DISTILBERT",
     model_name="distilbert-base-uncased-finetuned-sst-2-english",
@@ -37,7 +41,7 @@ def evaluate_mood(mood_text):
         print("Positive")
     else:
         print("Negative")
-
+    '''
 
 def add_to_exercises_and_needs():
     if exercise_combobox.get() != '' and need_combobox.get() != '':
@@ -68,10 +72,19 @@ def reset_exercises_and_needs():
 
 
 def get_output():
+    '''
     if feeling_entry.get() != '':
         mood = evaluate_mood(feeling_entry.get())
-
-
+    if id_entry.get() == '':    
+        model_recommendation = recommendation(user_id=None, input_time=int(time_combobox.get()))    
+    else:
+        model_recommendation = recommendation(user_id=id_entry.get(), input_time=int(time_combobox.get()))    
+    '''    
+    exercise_recommendation = []
+    exercise_indexes = filter(model_data, exercises, 10, 'meditation', 'ex_col', 'score_col')
+    for i in exercise_indexes:
+        exercise_recommendation.append(exercises[exercises['Bez.'] == i]['Titel'])
+    output_label.configure(text=f"User-based content: {exercise_recommendation[0]}\nContent-based content: {exercise_recommendation[1]}\nKnowledge-based content: {exercise_recommendation[2]}")
       
 frame = customtkinter.CTkFrame(master=root,
                                width=1200,
@@ -199,7 +212,15 @@ need_combobox = customtkinter.CTkOptionMenu(master=root,
                                                            
                                         )
 
-num_entry = customtkinter.CTkEntry(root, width=140,
+id_label = customtkinter.CTkLabel(root, text="User ID:", width=130,
+                               height=40,
+                               fg_color=("#2a9d8f", "#0F3D3E"),
+                               corner_radius=8, 
+                               text_font=('Times New Roman', 24),
+                               bg_color='black',
+                               )
+
+id_entry = customtkinter.CTkEntry(root, width=140,
                                height=40,
                                corner_radius=10,
                               fg_color='#2a9d8f',
@@ -277,7 +298,7 @@ output_label = customtkinter.CTkLabel(root,
 
 
 #Packing them on the screen
-frame.grid(row=0, column=0, columnspan=6, rowspan=12, sticky='news')
+frame.grid(row=0, column=0, columnspan=6, rowspan=10, sticky='news')
 
 title_label.grid(row=0, column=0, columnspan=6, sticky='ew', padx=10, rowspan=1)
 
@@ -289,22 +310,25 @@ exercise_label.grid(row=2, column=0, columnspan=3, rowspan=1, sticky='ew', padx=
 exercise_combobox.grid(row=2, column=3, columnspan=3, rowspan=1, sticky='ew', padx=10)
 exercise_combobox.set('')
 
-add_to_exercises_button.grid(row=4, column=0, columnspan=3, sticky='ew', padx=10, rowspan=1,)
-reset_exercises_button.grid(row=4, column=3, columnspan=3, sticky='ew', padx=10, rowspan=1,)
-
 need_label.grid(row=3, column=0, columnspan=3, sticky='ew', padx=10, rowspan=1) 
 need_combobox.grid(row=3, column=3, columnspan=3, sticky='ew', padx=10, rowspan=1)   
 need_combobox.set('')
 
-exercises_added_label.grid(row=5, column=0, columnspan=6, sticky='ew', padx=10, rowspan=1)
-needs_added_label.grid(row=6, column=0, columnspan=6, sticky='ew', padx=10, rowspan=1)
+id_label.grid(row=4, column=0, columnspan=3, sticky='ew', padx=10, rowspan=1) 
+id_entry.grid(row=4, column=3, columnspan=3, sticky='ew', padx=10, rowspan=1) 
 
-feeling_label.grid(row=7, column=0, columnspan=2, sticky='ew', padx=10, rowspan=1)
-feeling_entry.grid(row=7, column=2, columnspan=4, sticky='ew', padx=10, rowspan=1)
+add_to_exercises_button.grid(row=5, column=0, columnspan=3, sticky='ew', padx=10, rowspan=1,)
+reset_exercises_button.grid(row=5, column=3, columnspan=3, sticky='ew', padx=10, rowspan=1,)
+
+exercises_added_label.grid(row=6, column=0, columnspan=6, sticky='ew', padx=10, rowspan=1)
+needs_added_label.grid(row=7, column=0, columnspan=6, sticky='ew', padx=10, rowspan=1)
+
+feeling_label.grid(row=8, column=0, columnspan=2, sticky='ew', padx=10, rowspan=1)
+feeling_entry.grid(row=8, column=2, columnspan=4, sticky='ew', padx=10, rowspan=1)
 
 
-get_output_button.grid(row=8, column=0, columnspan=2, sticky='nsew', padx=10, rowspan=3)
-output_label.grid(row=8, column=2, columnspan=4, sticky='nsew', padx=10, rowspan=3)
+get_output_button.grid(row=9, column=0, columnspan=2, sticky='nsew', padx=10, rowspan=3, pady=10)
+output_label.grid(row=9, column=2, columnspan=4, sticky='nsew', padx=10, rowspan=3, pady=10)
 
 
 root.mainloop()
