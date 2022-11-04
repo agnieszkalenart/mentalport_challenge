@@ -32,16 +32,16 @@ def preprocess_time(data, time_col):
     data[time_col] = [re.sub(string = item, pattern=patternSpace, repl ="") for item in data[time_col]]
     return data
 
-def filter_time (maxTime, data, time_col):
+def filter_time (maxTime, ex_data, time_col, id_col):
     """
 
-    :param maxTime:
+    :param maxTime: maximum time specified by the user for the exercise
     :param data:
     :param time_col: the name of the time column
     :return:
     """
-    preprocess_time(data, time_col)
-    filtered_data = data[(data[time_col].astype(int)) < maxTime]
+    preprocess_time(ex_data, time_col)
+    filtered_data = ex_data[(ex_data[time_col].astype(int)) < maxTime]
     return filtered_data
 
 #### helper functions for collaborative filtering ######################################################################
@@ -118,3 +118,18 @@ def predict(ratings, similarity, mode="user") -> np.ndarray:
     return np.clip(pred, a_min=0, a_max=5)
 
 
+def filter_exercises(ex_data, cat):
+    ex_data['Category'] = ex_data['bungsart/Durchfhrungsweise'].replace({'kognitiv' : 'thinking', 'meditativ' : 'meditation',
+                                                            'Atemtechnik' : 'breathing', 'imaginr': 'visualisation',
+                                                            'krperlich': 'bewegen', 'Reflexionsfragen' : 'journalen',
+                                                            'Psychoedukation' : 'learning', 'praktisch' : 'creative',
+                                                            'affektiv' : 'abschalten'})
+    ex_data = ex_data[ex_data['Category'] == cat]
+    list_ex = ex_data['Bez.'].values
+    return list_ex
+
+def change_ranking(data, list_ex, score_col, ex_col):
+    value = data[score_col].max()/2
+    data['additional_weight'] = data[ex_col].apply(lambda x: value if x in list_ex else 0)
+    data[score_col] = data[score_col] + data['additional_weight']
+    return data.nlargest(3, columns = score_col)[ex_col].values
