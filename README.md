@@ -45,21 +45,21 @@ The project directory is organised in the following way:
 
 | Path                      | Role                                         |
 |---------------------------|----------------------------------------------|
-| `data/`                   | The data used and created in this challenge  |
-| `data/mp_data/`           | Data provided for this challenge             |
-| `data/out/`               | Data created by our scripts                  |
-| `exploration/`             | Some exploratory analyses to collect ideas   | 
-| `collaborative_filtering.py/`  | The process of creating the prediction matrices for user- and item-based collaborative filtering |
-| `content_based_filtering.py/`  | The process of creating the content based filtering predictions |
-| `ensemble.py/`             | The training of the hybrid recommender network |
-| `gui.py`                 | The GUI for the recommender system           |
-| `helper.py`             | Helper functions used in the scripts         |
-| `final_filtering.py`     | The final filtering process                  |
-| `sentiment_analysis.py`  | The sentiment analysis of the optional user inputs  |
+| `data/`                   | The data used and created in this challenge.  |
+| `data/mp_data/`           | The data provided for this challenge.            |
+| `data/out/`               | The data created by our scripts.                 |
+| `exploration/`             | Some exploratory analyses to collect ideas.   | 
+| `collaborative_filtering.py`  | The process of creating the prediction matrices for user- and item-based collaborative filtering. |
+| `content_based_filtering.py`  | The process of creating the content based filtering predictions. |
+| `ensemble.py`             | The training of the hybrid recommender network. |
+| `final_filtering.py`     | The final filtering process.                  |
+| `gui.py`                 | The GUI for the recommender system.           |
+| `helper.py`             | Helper functions used in the scripts.         |
+| `sentiment_analysis.py`  | The sentiment analysis of the optional user inputs.  |
 
 
 ## Challenge Presentation
 
 Link to the slides:
-[Click me to go to Google!](https://www.google.com)
+[Click me to go to Google!](https://docs.google.com/presentation/d/1AOAqVjP8nUAjZEilxWySRqGeFr_6f_skcO2XScr3AaE/edit#slide=id.gd251bb473_0_600)
 
