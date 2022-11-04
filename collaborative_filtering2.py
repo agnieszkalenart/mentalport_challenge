@@ -1,246 +1,95 @@
-#%%
+"""
+File for creating the user-item matrices
+"""
 
+# standard library imports
+
+# 3rd party imports
 import pandas as pd
 import numpy as np
-import json
-import ast
-
-pd.set_option("display.max_columns", None)
-
-
-#%%
-
-#roman paths
-# C:\\Users\\roman\PycharmProjects\\semester_3\\mentalport_challenge\\mp_data-main\\mp_data\\exercises.csv
-# C:\\Users\\roman\PycharmProjects\\semester_3\\mentalport_challenge\\mp_data-main\\mp_data\\exerciseResults.csv
-# C:\\Users\\roman\PycharmProjects\\semester_3\\mentalport_challenge\\mp_data-main\\mp_data\\users.csv
-
-# jp paths
-# mentalport_challenge/mp_data-main/mp_data/exercises.csv
-# mentalport_challenge/mp_data-main/mp_data/exerciseResults.csv
-# mentalport_challenge/mp_data-main/mp_data/users.csv
-
-#%%
-
-import csv
-
-with open(
-    "mp_data-main\\mp_data\\exercise-original.csv",
-    newline="\n",
-    encoding="utf-8",
-    errors="ignore",
-) as csvfile:
-    csv_reader = list(csv.reader(csvfile, delimiter=";"))
-    # print(csv_reader)
-
-cols = csv_reader[0]
-content = csv_reader[1:]
-exercises_df = pd.DataFrame.from_records(content, columns=cols)
-
-exercises_df.replace("", np.nan, inplace=True)
-exercises_df = exercises_df.dropna(how="all")
-exercises_df = exercises_df.drop(exercises_df.columns[-2], axis=1)
-
-# exercises_df.to_csv('C:\\Users\\roman\PycharmProjects\\semester_3\\mentalport_challenge\\mp_data-main\\mp_data\\exercise-original-fixed.csv')
-
-#%%
-
-# exercises_df = pd.read_csv("C:\\Users\\roman\PycharmProjects\\semester_3\\mentalport_challenge\\mp_data-main\\mp_data\\exercise-original.csv", encoding = "iso-8859-1", sep=";")
-exerciseResults_df = pd.read_csv("mp_data-main\\mp_data\\exerciseResults.csv")
-users_df = pd.read_csv("mp_data-main\\mp_data\\users.csv")
-test = pd.read_csv("mp_data-main\\mp_data\\exercises.csv")
-
-#%%
-
-def getUser_exerciseResults(df):
-    df["__key__user"] = df["__key__"].apply(
-        lambda x: json.loads(x)["__key__"]["path"]
-        .replace(" ", "")
-        .replace('"', "")
-        .split(",")[1]
-    )
-    return df["__key__user"]
-
-
-def getUser_users_df(df):
-    df["__key__user"] = df["__key__"].apply(lambda x: json.loads(x)["__key__"]["name"])
-    return df["__key__user"]
-
-
-# def getExercise(df):
-#     df["__key__exercise"] = exerciseResults_df["__key__"].apply(lambda x:
-#         json.loads(x)["__key__"]["name"]
-#     )
-#     return df["__key__exercise"]
-
-
-def getRating(df):
-    df["satisfaction"] = df["feedback"].apply(
-        lambda x: json.loads(x)["feedback"]["exerciseRating"]["satisfaction"]
-    )
-    df["satisfaction"] = df["satisfaction"].apply(
-        lambda x: None if (x is None) else int(x[0])
-    )
-    return df["satisfaction"]
-
-
-#%%
-
-users_df["__key__user"] = getUser_users_df(users_df)
-
-exerciseResults_df["__key__user"] = getUser_exerciseResults(exerciseResults_df)
-exerciseResults_df["satisfaction"] = getRating(exerciseResults_df)
-
-# filter out all rows where exerciseId is a string of length > 7
-exerciseResults_df = exerciseResults_df[exerciseResults_df["exerciseId"].apply(lambda x: len(x) < 7)]
-
-#%%
-# exploration
-import numpy as np
-import seaborn as sns
-import matplotlib.pyplot as plt
-
-exerciseResults_df.groupby(["__key__user"]).size().hist(
-    bins=50, grid=False, xlabelsize=12, ylabelsize=12
-)
-plt.xlim([0, 150])
-plt.xlabel("Number of movies being rated", fontsize=15)
-plt.ylabel("Frequency of users", fontsize=15)
-plt.show()
-
-
-#%%
-def getTime(df):
-    df["endtime"] = df["endTime"].apply(lambda x: json.loads(x)["endTime"]["date_time"])
-
-    return df["endtime"]
-
-
-#%%
-exerciseResults_df["date"] = getTime(exerciseResults_df)
-
-exerciseResults_df["date"] = pd.to_datetime(exerciseResults_df["date"])
-
-
-#%%
-# drop duplicates from exerciseResults_df and only keep cases with max value in date (so the latest ratings)
-exerciseResults_df_unique = exerciseResults_df.sort_values(
-    "date", ascending=False
-).drop_duplicates(subset=["__key__user", "exerciseId"], keep="first")
-
-#%%
-ratings = exerciseResults_df_unique[["__key__user", "exerciseId", "satisfaction"]]
-
-# filter out nan values
-ratings = ratings[ratings["satisfaction"].notna()]
-
-
-#%%
-
-ratings_f2 = ratings.pivot(
-    index="exerciseId", columns="__key__user", values="satisfaction"
-).fillna(0)
-ratings_f2.head(3)
-
-#%%
-# find users not yet in pivot table
-users_not_in_pivot = list(set(users_df.__key__user.unique()) - set(ratings_f2.columns))
-
-# rename Bez. column in exercises df to exerciseId
-exercises_df.rename(columns={"Bez.": "exerciseId"}, inplace=True)
-
-# remove all cases where exerciseId is nan
-# exercises_df = exercises_df[exercises_df.exerciseId.notna()]
-
-# find exercises not yet in pivot table
-exercises_not_in_pivot = list(
-    set(exercises_df.exerciseId.unique()) - set(ratings_f2.index)
-)
-
-
-# #%%
-# # for all users not in pivot table, add a column with all zeros
-# for user in users_not_in_pivot:
-#     ratings_f2[user] = 0
-
-# #%%
-# # for all exercises not in pivot table, add a row with all zeros
-# for exercise in exercises_not_in_pivot:
-#     ratings_f2.loc[exercise] = 0
-
-#%%
-# compute user and item similarities
 from sklearn.metrics.pairwise import pairwise_distances
 
-# User Similarity Matrix
-user_correlation = 1 - pairwise_distances(ratings_f2.T, metric="cosine")
-user_correlation[np.isnan(user_correlation)] = 0
+# local imports (i.e. our own code)
+from helper import get_user_exercise_results, get_user_users, get_satisfaction, get_date, predict
 
-# replace indices with column indices from ratings_f2
-user_correlation_df = pd.DataFrame(
-    user_correlation, index=ratings_f2.columns, columns=ratings_f2.columns
+# import datasets
+exercises = pd.read_csv("mp_data-main\\mp_data\\exercise-original-fixed.csv")
+exercise_results = pd.read_csv("mp_data-main\\mp_data\\exerciseResults.csv")
+users = pd.read_csv("mp_data-main\\mp_data\\users.csv")
+
+# extract user_ids
+users["user_id"] = get_user_users(users)
+exercise_results["user_id"] = get_user_exercise_results(exercise_results)
+
+# extract satisfaction scores
+exercise_results["satisfaction"] = get_satisfaction(exercise_results)
+
+# filter out wrongly included "exercises"
+exercise_results = exercise_results[exercise_results["exerciseId"].apply(lambda x: len(x) < 7)]
+
+# extract the date
+exercise_results["date"] = get_date(exercise_results)
+exercise_results["date"] = pd.to_datetime(exercise_results["date"])
+
+# drop duplicates from exercise_results and only keep the latest rating
+exercise_results_unique = exercise_results.sort_values(
+    "date", ascending=False
+).drop_duplicates(subset=["user_id", "exerciseId"], keep="first")
+
+# create df containing all valid user-item rating pairs
+ratings = exercise_results_unique[["user_id", "exerciseId", "satisfaction"]]
+ratings = ratings[ratings["satisfaction"].notna()]
+
+# create an item-user matrix containing the ratings
+iu_matrix = ratings.pivot(
+    index="exerciseId", columns="user_id", values="satisfaction"
+).fillna(0)
+
+# create the user similarity matrix
+user_similarities = 1 - pairwise_distances(iu_matrix.T, metric="cosine")
+user_similarities[np.isnan(user_similarities)] = 0
+
+# use the user keys as index and column names
+user_similarities_df = pd.DataFrame(
+    user_similarities, index=iu_matrix.columns, columns=iu_matrix.columns
 )
 
-##%
-print("Shape of User Similarity Matrix:", user_correlation.shape)
-# Item Similarity Matrix
-item_correlation = 1 - pairwise_distances(ratings_f2, metric="cosine")
-item_correlation[np.isnan(item_correlation)] = 0
-print("Shape of Item Similarity Matrix:", item_correlation.shape)
+# create the item similarity matrix
+item_similarities = 1 - pairwise_distances(iu_matrix, metric="cosine")
+item_similarities[np.isnan(item_similarities)] = 0
 
-# replace indices with row indices from ratings_f2
-# item_correlation_df = pd.DataFrame(item_correlation, index=ratings_f2.index, columns=ratings_f2.index)
+# use the item keys as index and column names
+item_similarities_df = pd.DataFrame(item_similarities, index=iu_matrix.index, columns=iu_matrix.index)
 
+# create the item-based collaborative filtering prediction matrix
+ui_matrix_item_based = predict(iu_matrix.T, item_similarities, mode="item")
 
-#%%
+# create the user-based collaborative filtering prediction matrix
+ui_matrix_user_based = predict(iu_matrix.T, user_similarities, mode="user")
 
-
-def predict(ratings, similarity, mode="user"):
-    if mode == "user":
-        mean_user_rating = np.array(ratings.replace(0, np.nan).mean(axis=1))
-        # Use np.newaxis so that mean_user_rating has same format as ratings
-        ratings_diff = np.array(ratings) - mean_user_rating[:, np.newaxis]
-        pred = (
-            mean_user_rating[:, np.newaxis]
-            + similarity.dot(ratings_diff)
-            / np.array([np.abs(similarity).sum(axis=1)]).T
-        )
-    elif mode == "item":
-        mean_item_rating = np.array(ratings.replace(0, np.nan).mean(axis=0))
-        ratings_diff = np.array(ratings) - mean_item_rating[np.newaxis, :]
-        pred = mean_item_rating[np.newaxis, :] + ratings_diff.dot(
-            similarity
-        ) / np.array([np.abs(similarity).sum(axis=1)])
-    elif mode == "content":
-        pred = ratings.dot(similarity) / np.array([np.abs(similarity).sum(axis=1)])
-    return np.clip(pred, a_min=0, a_max=5)
-    # return pred
-
-
-item_prediction = predict(ratings_f2.T, item_correlation, mode="item")
-user_prediction = predict(ratings_f2.T, user_correlation, mode="user")
-
-
-# replace indices with row indices from ratings_f2
-user_prediction_df = pd.DataFrame(
-    user_prediction, index=ratings_f2.columns, columns=ratings_f2.index
+# replace indices user and item IDs
+ui_matrix_item_based_df = pd.DataFrame(
+    ui_matrix_user_based, index=iu_matrix.columns, columns=iu_matrix.index
 )
-item_prediction_df = pd.DataFrame(
-    item_prediction, index=ratings_f2.columns, columns=ratings_f2.index
+ui_matrix_user_based_df = pd.DataFrame(
+    ui_matrix_item_based, index=iu_matrix.columns, columns=iu_matrix.index
 )
 
-# transpose the ratings_f2 dataset
-ratings_f2_T = ratings_f2.T
+# transpose the item-user matrix to get a user-item matrix
+ui_matrix = iu_matrix.T
+
+# store the user-item matrices (1. actual ratings, 2. item-based CF predictions, 3. user-based CF predictions)
+'''
+ui_matrix.to_csv("mp_data-main\\mp_data\\user-item-matrix.csv")
+ui_matrix_item_based_df.to_csv("mp_data-main\\mp_data\\user-predictions.csv")
+ui_matrix_user_based_df.to_csv("mp_data-main\\mp_data\\item-predictions.csv")
+'''
 
 
-#%%
+#TODO:
 
-ratings_f2_T.to_csv('C:\\Users\\roman\PycharmProjects\\semester_3\\mentalport_challenge\\mp_data-main\\mp_data\\user-item-matrix.csv')
-user_prediction_df.to_csv('C:\\Users\\roman\PycharmProjects\\semester_3\\mentalport_challenge\\mp_data-main\\mp_data\\user-predictions.csv')
-item_prediction_df.to_csv('C:\\Users\\roman\PycharmProjects\\semester_3\\mentalport_challenge\\mp_data-main\\mp_data\\item-predictions.csv')
+# remove unnecessary scripts
+# organize data repositories
 
 
-print("ok")
-# TODO: debug pred function
-# TODO: normalize ratings
-# TODO: remove unnecessary exercises
+
