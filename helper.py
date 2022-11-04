@@ -32,17 +32,17 @@ def preprocess_time(data, time_col):
     data[time_col] = [re.sub(string = item, pattern=patternSpace, repl ="") for item in data[time_col]]
     return data
 
-def filter_time (maxTime, data, time_col):
+def filter_time (maxTime, ex_data, time_col, id_col):
     """
 
-    :param maxTime:
-    :param data:
+    :param maxTime: maximum time specified by the user for the exercise
+    :param data: 
     :param time_col: the name of the time column
     :return:
     """
-    preprocess_time(data, time_col)
-    filtered_data = data[(data[time_col].astype(int)) < maxTime]
-    return filtered_data
+    preprocess_time(ex_data, time_col)
+    filtered_data = ex_data[(ex_data[time_col].astype(int)) < maxTime]
+    return list(filtered_data[id_col])
 
 #### helper functions for collaborative filtering ######################################################################
 def get_user_exercise_results(df) -> np.ndarray:
