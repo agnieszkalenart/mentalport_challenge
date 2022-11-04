@@ -13,6 +13,7 @@ import seaborn as sns
 
 # local imports (i.e. our own code)
 
+
 class Recommender(torch.nn.Module):
     def __init__(self):
         super().__init__()
@@ -80,18 +81,6 @@ class RecommenderDataset(torch.utils.data.Dataset):
         return self.X[idx], self.y[idx]
 
 
-data = RecommenderDataset(
-    r"data\out\user-predictions.csv",
-    r"data\out\item-predictions.csv",
-    r"data\out\content_based.csv",
-    r"data\out\user-item-matrix.csv",
-)
-dataloader = torch.utils.data.DataLoader(data, batch_size=32, shuffle=True)
-model = Recommender()
-loss_fn = torch.nn.MSELoss()
-optimizer = torch.optim.Adam(model.parameters())
-
-
 def train_one_epoch():
     running_loss = 0.0
 
@@ -112,22 +101,34 @@ def train_one_epoch():
     return running_loss
 
 
-EPOCHS = 1000
+if __name__ == "__main__":
+    data = RecommenderDataset(
+        r"data\out\user-predictions.csv",
+        r"data\out\item-predictions.csv",
+        r"data\out\content_based.csv",
+        r"data\out\user-item-matrix.csv",
+    )
+    dataloader = torch.utils.data.DataLoader(data, batch_size=32, shuffle=True)
+    model = Recommender()
+    loss_fn = torch.nn.MSELoss()
+    optimizer = torch.optim.Adam(model.parameters())
 
-losses = []
+    EPOCHS = 1000
 
-for epoch in range(EPOCHS):
-    model.train(True)
-    avg_loss = train_one_epoch()
+    losses = []
 
-    model.train(False)
-    if epoch % 10 == 0:
-        print(f"Epoch {epoch + 1} Loss: {avg_loss:.2f}")
+    for epoch in range(EPOCHS):
+        model.train(True)
+        avg_loss = train_one_epoch()
 
-    losses.append(avg_loss)
+        model.train(False)
+        if epoch % 10 == 0:
+            print(f"Epoch {epoch + 1} Loss: {avg_loss:.2f}")
 
-torch.save(model.state_dict(), "model.pt")
+        losses.append(avg_loss)
 
-# losses = pd.DataFrame({"Epochs": range(EPOCHS), "RMSE": [sqrt(x) for x in losses]})
+    torch.save(model.state_dict(), "model.pt")
 
-# sns.lineplot(data=losses, x="Epochs", y="RMSE")
+    # losses = pd.DataFrame({"Epochs": range(EPOCHS), "RMSE": [sqrt(x) for x in losses]})
+
+    # sns.lineplot(data=losses, x="Epochs", y="RMSE")
