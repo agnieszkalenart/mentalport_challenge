@@ -1,5 +1,5 @@
 """
-File for final filtering
+File for final filtering or re-ranking, based on user inputs.
 """
 
 # standard library imports
