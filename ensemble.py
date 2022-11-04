@@ -2,7 +2,6 @@
 File for training the hybrid recommender neural network
 """
 
-
 # standard library imports
 from math import sqrt
 
