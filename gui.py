@@ -7,7 +7,7 @@ import pandas as pd
 #from happytransformer import HappyTextClassification
 
 # local imports (i.e. our own code)
-from test import filter
+from final_filtering import filter
 
 root = customtkinter.CTk()
 
@@ -19,9 +19,10 @@ root.geometry("1200x700")
 root.configure(bg='black')
 
 
-exercises = []
+exercises_list = []
 needs = []
 
+exercises=pd.read_csv("data/mp_data/exercise-original-fixed.csv")
 model_data = pd.DataFrame(columns = ['ex_col', 'score_col'])
 model_data['ex_col'] = exercises['Bez.']
 model_data['score_col'] = [1 for i in range(len(model_data))]
@@ -45,16 +46,16 @@ def evaluate_mood(mood_text):
 
 def add_to_exercises_and_needs():
     if exercise_combobox.get() != '' and need_combobox.get() != '':
-        exercises.append(exercise_combobox.get())
+        exercises_list.append(exercise_combobox.get())
         needs.append(need_combobox.get())
         exercise_combobox.set('')
         need_combobox.set('')
-        exercises_added_label.configure(text=f"Exercises: {exercises}")
+        exercises_added_label.configure(text=f"Exercises: {exercises_list}")
         needs_added_label.configure(text=f"Needs: {needs}")
     elif exercise_combobox.get() != '':
-        exercises.append(exercise_combobox.get())
+        exercises_list.append(exercise_combobox.get())
         exercise_combobox.set('')
-        exercises_added_label.configure(text=f"Exercises: {exercises}")
+        exercises_added_label.configure(text=f"Exercises: {exercises_list}")
     elif need_combobox.get() != '':
         needs.append(need_combobox.get())
         need_combobox.set('')
@@ -63,11 +64,11 @@ def add_to_exercises_and_needs():
         messagebox.showinfo(title='Info', message='Please select some exercises and needs.')
 
 def reset_exercises_and_needs():
-    global exercises
+    global exercises_list
     global needs
-    exercises = []
+    exercises_list = []
     needs = []
-    exercises_added_label.configure(text=f"Exercises: {exercises}")
+    exercises_added_label.configure(text=f"Exercises: {exercises_list}")
     needs_added_label.configure(text=f"Needs: {needs}")
 
 
@@ -81,7 +82,7 @@ def get_output():
         model_recommendation = recommendation(user_id=id_entry.get(), input_time=int(time_combobox.get()))    
     '''    
     exercise_recommendation = []
-    exercise_indexes = filter(model_data, exercises, 10, 'meditation', 'ex_col', 'score_col')
+    exercise_indexes = filter(model_data, exercises, int(time_combobox.get()), exercise_combobox.get(), 'ex_col', 'score_col')
     for i in exercise_indexes:
         exercise_recommendation.append(exercises[exercises['Bez.'] == i]['Titel'])
     output_label.configure(text=f"User-based content: {exercise_recommendation[0]}\nContent-based content: {exercise_recommendation[1]}\nKnowledge-based content: {exercise_recommendation[2]}")
@@ -233,7 +234,7 @@ id_entry = customtkinter.CTkEntry(root, width=140,
                             )
 
 
-exercises_added_label = customtkinter.CTkLabel(root, text=f"Exercises: {exercises}", width=130,
+exercises_added_label = customtkinter.CTkLabel(root, text=f"Exercises: {exercises_list}", width=130,
                                height=40,
                                fg_color=("#2a9d8f", "#0F3D3E"),
                                corner_radius=8, 
