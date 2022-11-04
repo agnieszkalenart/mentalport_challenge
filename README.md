@@ -32,7 +32,7 @@ The hybrid recommender system is implemented in the TODO file.
 * [Jan-Paul Briem](https://github.com/jpbriem) - M.Sc. Business Informatics
 * [Noel Chia]() - M.Sc. Data Science
 * [Roman Hess](https://github.com/romanhess98) - M.Sc. Data Science
-* [Mariam Arustashvili]() - M.Sc. Data Science
+* [Mariam Arustashvili](https://github.com/marusta) - M.Sc. Data Science
 
 ### DHBW Mannheim
 
@@ -46,6 +46,7 @@ The project directory is organised in the following way:
 | Path                      | Role                                         |
 |---------------------------|----------------------------------------------|
 | `data/`                   | The data used and created in this challenge  |
+| `exploration`             | Some exploratory analyses to collect ideas   |                             |
 
 ## Challenge Presentation
 
