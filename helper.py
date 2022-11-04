@@ -57,7 +57,6 @@ def get_user_exercise_results(df) -> np.ndarray:
         .replace('"', "")
         .split(",")[1]
     )
-    #return df["user_id"]
 
 
 def get_user_users(df) -> np.ndarray:
@@ -67,7 +66,6 @@ def get_user_users(df) -> np.ndarray:
     :return: the newly created column "user_id"
     """
     return df["__key__"].apply(lambda x: json.loads(x)["__key__"]["name"])
-    #return df["user_id"]
 
 
 def get_satisfaction(df) -> np.ndarray:
@@ -92,8 +90,6 @@ def get_date(df) -> np.ndarray:
     :return: the newly created column "date"
     """
     return df["endTime"].apply(lambda x: json.loads(x)["endTime"]["date_time"])
-
-    #return df["endtime"]
 
 
 def predict(ratings, similarity, mode="user") -> np.ndarray:
