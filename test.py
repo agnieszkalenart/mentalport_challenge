@@ -13,11 +13,12 @@ import torch
 from final_filtering import recommendation
 from ensemble  import Recommender
 
+#user 1
+user_id = "9k9z4O001JPYOFg3akDrzCA7btx2"
+input_time = 60
+input_cat = "thinking"
 
-user_id = "3FTsO3V9ACTkMNYu1lh8"
-#user_id = "3ubZLnRhsmTEvuqQ8SLB"
-input_time = 5
-input_cat = "breathing"
+
 model = Recommender()
 model.load_state_dict(torch.load("models/model_v2.pt"))
 model.eval()
