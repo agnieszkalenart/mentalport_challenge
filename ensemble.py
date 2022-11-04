@@ -118,6 +118,8 @@ for epoch in range(EPOCHS):
 
     losses.append(avg_loss)
 
-losses = pd.DataFrame({"Epochs": range(EPOCHS), "RMSE": [sqrt(x) for x in losses]})
+torch.save(model.state_dict(), "model.pt")
 
-sns.lineplot(data=losses, x="Epochs", y="RMSE")
+# losses = pd.DataFrame({"Epochs": range(EPOCHS), "RMSE": [sqrt(x) for x in losses]})
+
+# sns.lineplot(data=losses, x="Epochs", y="RMSE")
