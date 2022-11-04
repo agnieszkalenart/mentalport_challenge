@@ -49,6 +49,7 @@ The project directory is organised in the following way:
 | `data/mp_data/`           | The data provided for this challenge.            |
 | `data/out/`               | The data created by our scripts.                 |
 | `exploration/`             | Some exploratory analyses to collect ideas.   | 
+| `models/`                 | The models we created.                       |
 | `collaborative_filtering.py`  | The process of creating the prediction matrices for user- and item-based collaborative filtering. |
 | `content_based_filtering.py`  | The process of creating the content based filtering predictions. |
 | `ensemble.py`             | The training of the hybrid recommender network. |
