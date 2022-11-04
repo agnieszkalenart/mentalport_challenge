@@ -1,6 +1,6 @@
 # Mentalport Challenge - STADS Datathon 2022
 
-> This repository holds the code that was developed during the STADS Datathon 2022
+> This repository holds the code that was developed during the STADS Datathon 2022 by Team 10
 
 
 ## Description
@@ -30,7 +30,7 @@ The hybrid recommender system is implemented in the TODO file.
 
 * [Agnieszka Lenart](https://github.com/agnieszkalenart) - M.Sc. Data Science
 * [Jan-Paul Briem](https://github.com/jpbriem) - M.Sc. Business Informatics
-* [Noel Chia]() - M.Sc. Data Science
+* [Noel Chia](https://github.com/) - M.Sc. Data Science
 * [Roman Hess](https://github.com/romanhess98) - M.Sc. Data Science
 * [Mariam Arustashvili](https://github.com/marusta) - M.Sc. Data Science
 
@@ -46,7 +46,12 @@ The project directory is organised in the following way:
 | Path                      | Role                                         |
 |---------------------------|----------------------------------------------|
 | `data/`                   | The data used and created in this challenge  |
-| `exploration`             | Some exploratory analyses to collect ideas   |                             |
+| `data/API_data/`          | Data from the mentalport API, not used       |
+| `data/mp_data/`           | Data provided for this challenge             |
+| `data/out/`               | Data created by our scripts                  |
+| `exploration/`             | Some exploratory analyses to collect ideas   | 
+| `collaborative_filtering.py/`  | The process of creating the user item matrices for user- and item-based collaborative filtering |
+
 
 ## Challenge Presentation
 
