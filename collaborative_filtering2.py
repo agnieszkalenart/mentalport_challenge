@@ -10,7 +10,7 @@ pd.set_option("display.max_columns", None)
 
 #%%
 
-# roman paths
+#roman paths
 # C:\\Users\\roman\PycharmProjects\\semester_3\\mentalport_challenge\\mp_data-main\\mp_data\\exercises.csv
 # C:\\Users\\roman\PycharmProjects\\semester_3\\mentalport_challenge\\mp_data-main\\mp_data\\exerciseResults.csv
 # C:\\Users\\roman\PycharmProjects\\semester_3\\mentalport_challenge\\mp_data-main\\mp_data\\users.csv
@@ -52,7 +52,6 @@ test = pd.read_csv("mp_data-main\\mp_data\\exercises.csv")
 
 #%%
 
-
 def getUser_exerciseResults(df):
     df["__key__user"] = df["__key__"].apply(
         lambda x: json.loads(x)["__key__"]["path"]
@@ -91,6 +90,9 @@ users_df["__key__user"] = getUser_users_df(users_df)
 
 exerciseResults_df["__key__user"] = getUser_exerciseResults(exerciseResults_df)
 exerciseResults_df["satisfaction"] = getRating(exerciseResults_df)
+
+# filter out all rows where exerciseId is a string of length > 7
+exerciseResults_df = exerciseResults_df[exerciseResults_df["exerciseId"].apply(lambda x: len(x) < 7)]
 
 #%%
 # exploration
@@ -167,7 +169,7 @@ exercises_not_in_pivot = list(
 #     ratings_f2.loc[exercise] = 0
 
 #%%
-# compiute user and item similarities
+# compute user and item similarities
 from sklearn.metrics.pairwise import pairwise_distances
 
 # User Similarity Matrix
@@ -232,12 +234,13 @@ ratings_f2_T = ratings_f2.T
 
 
 #%%
-"""
+
 ratings_f2_T.to_csv('C:\\Users\\roman\PycharmProjects\\semester_3\\mentalport_challenge\\mp_data-main\\mp_data\\user-item-matrix.csv')
 user_prediction_df.to_csv('C:\\Users\\roman\PycharmProjects\\semester_3\\mentalport_challenge\\mp_data-main\\mp_data\\user-predictions.csv')
 item_prediction_df.to_csv('C:\\Users\\roman\PycharmProjects\\semester_3\\mentalport_challenge\\mp_data-main\\mp_data\\item-predictions.csv')
-"""
 
+
+print("ok")
 # TODO: debug pred function
 # TODO: normalize ratings
 # TODO: remove unnecessary exercises
