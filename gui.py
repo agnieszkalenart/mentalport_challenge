@@ -1,7 +1,17 @@
+"""
+File containing the gui
+"""
+
+# standard library imports
 from tkinter import *
-from tkinter import messagebox 
+from tkinter import messagebox
+# 3rd party imports
 import customtkinter
 from happytransformer import HappyTextClassification
+
+# local imports (i.e. our own code)
+
+
 
 
 root = customtkinter.CTk()
@@ -38,16 +48,16 @@ def add_to_exercises_and_needs():
         exercises_added_label.configure(text=f"Exercises: {exercises}")
         needs_added_label.configure(text=f"Needs: {needs}")
     elif exercise_combobox.get() != '':
-        exercises.append(exercise_combobox.get())   
-        exercise_combobox.set('') 
+        exercises.append(exercise_combobox.get())
+        exercise_combobox.set('')
         exercises_added_label.configure(text=f"Exercises: {exercises}")
     elif need_combobox.get() != '':
-        needs.append(need_combobox.get())  
-        need_combobox.set('')  
+        needs.append(need_combobox.get())
+        need_combobox.set('')
         needs_added_label.configure(text=f"Needs: {needs}")
     else:
-        messagebox.showinfo(title='Info', message='Please select some exercises and needs.')    
-        
+        messagebox.showinfo(title='Info', message='Please select some exercises and needs.')
+
 def reset_exercises_and_needs():
     global exercises
     global needs
@@ -56,12 +66,12 @@ def reset_exercises_and_needs():
     exercises_added_label.configure(text=f"Exercises: {exercises}")
     needs_added_label.configure(text=f"Needs: {needs}")
 
-      
+
 def get_output():
     if feeling_entry.get() != '':
         mood = evaluate_mood(feeling_entry.get())
-        
-      
+
+
       
 frame = customtkinter.CTkFrame(master=root,
                                width=1200,

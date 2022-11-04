@@ -13,9 +13,9 @@ from sklearn.metrics.pairwise import pairwise_distances
 from helper import get_user_exercise_results, get_user_users, get_satisfaction, get_date, predict
 
 # import datasets
-exercises = pd.read_csv("mp_data-main\\mp_data\\exercise-original-fixed.csv")
-exercise_results = pd.read_csv("mp_data-main\\mp_data\\exerciseResults.csv")
-users = pd.read_csv("mp_data-main\\mp_data\\users.csv")
+exercises = pd.read_csv("data\\mp_data\\exercise-original-fixed.csv")
+exercise_results = pd.read_csv("data\\mp_data\\exerciseResults.csv")
+users = pd.read_csv("data\\mp_data\\users.csv")
 
 # extract user_ids
 users["user_id"] = get_user_users(users)
@@ -79,16 +79,30 @@ ui_matrix_user_based_df = pd.DataFrame(
 ui_matrix = iu_matrix.T
 
 # store the user-item matrices (1. actual ratings, 2. item-based CF predictions, 3. user-based CF predictions)
+'''
+ui_matrix.to_csv("data\\out\\user-item-matrix.csv")
+ui_matrix_item_based_df.to_csv("data\\out\\user-predictions.csv")
+ui_matrix_user_based_df.to_csv("data\\out\\item-predictions.csv")
+'''
 
-ui_matrix.to_csv("mp_data-main\\out\\user-item-matrix.csv")
-ui_matrix_item_based_df.to_csv("mp_data-main\\out\\user-predictions.csv")
-ui_matrix_user_based_df.to_csv("mp_data-main\\out\\item-predictions.csv")
+# additionally create collaborative filtering predictions without clipping
+# create the item-based collaborative filtering prediction matrix
+ui_matrix_item_based_no_clip = predict(iu_matrix.T, item_similarities, mode="item", clip=False)
 
+# create the user-based collaborative filtering prediction matrix
+ui_matrix_user_based_no_clip = predict(iu_matrix.T, user_similarities, mode="user", clip=False)
 
+# replace indices user and item IDs
+ui_matrix_item_based_df_no_clip = pd.DataFrame(
+    ui_matrix_user_based_no_clip, index=iu_matrix.columns, columns=iu_matrix.index
+)
+ui_matrix_user_based_df_no_clip = pd.DataFrame(
+    ui_matrix_item_based_no_clip, index=iu_matrix.columns, columns=iu_matrix.index
+)
 
-#TODO:
-# remove unnecessary scripts
-# organize data repositories
-
-
+# store the user-item matrices without clipping (1. item-based CF predictions, 2. user-based CF predictions)
+'''
+ui_matrix_user_based_df_no_clip.to_csv("data\\out\\item-predictions-noclip.csv")
+ui_matrix_item_based_df_no_clip.to_csv("data\\out\\user-predictions-noclip.csv")
+'''
 

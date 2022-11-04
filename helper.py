@@ -1,5 +1,5 @@
 """
-This file contains useful functions for the project
+File containing useful functions for the project
 """
 
 # standard library imports
@@ -36,15 +36,18 @@ def filter_time (maxTime, ex_data, time_col, id_col):
     """
 
     :param maxTime: maximum time specified by the user for the exercise
-    :param data: 
+    :param data:
     :param time_col: the name of the time column
     :return:
     """
     preprocess_time(ex_data, time_col)
     filtered_data = ex_data[(ex_data[time_col].astype(int)) < maxTime]
-    return list(filtered_data[id_col])
+    return filtered_data
+
 
 #### helper functions for collaborative filtering ######################################################################
+
+
 def get_user_exercise_results(df) -> np.ndarray:
     """
     Extracts the user_id from the exercise_results dataframe
@@ -92,12 +95,13 @@ def get_date(df) -> np.ndarray:
     return df["endTime"].apply(lambda x: json.loads(x)["endTime"]["date_time"])
 
 
-def predict(ratings, similarity, mode="user") -> np.ndarray:
+def predict(ratings, similarity, mode="user", clip = True) -> np.ndarray:
     """
     Creates the user or item based collaborative filtering prediction matrix
     :param ratings: The user-item matrix containing the ratings
     :param similarity: The user-user or item-item similarity matrix
     :param mode: The mode of the collaborative filtering algorithm ("user" or "item")
+    :param clip: Whether to clip the predictions to the range [1, 5]
     :return: The user or item based collaborative filtering prediction matrix
     """
     if mode == "user":
@@ -115,17 +119,21 @@ def predict(ratings, similarity, mode="user") -> np.ndarray:
         pred = mean_item_rating[np.newaxis, :] + ratings_diff.dot(
             similarity
         ) / np.array([np.abs(similarity).sum(axis=1)])
-    return np.clip(pred, a_min=0, a_max=5)
+    if clip:
+        return np.clip(pred, a_min=0, a_max=5)
+    else:
+        return pred
 
 
+#TODO: put them in the section where they belong and add documentation!
 def filter_exercises(ex_data, cat):
-    ex_data['Category'] = ex_data['bungsart/Durchfhrungsweise'].replace({'kognitiv' : 'thinking', 'meditativ' : 'meditation', 
-                                                            'Atemtechnik' : 'breathing', 'imaginr': 'visualisation', 
+    ex_data['Category'] = ex_data['bungsart/Durchfhrungsweise'].replace({'kognitiv' : 'thinking', 'meditativ' : 'meditation',
+                                                            'Atemtechnik' : 'breathing', 'imaginr': 'visualisation',
                                                             'krperlich': 'bewegen', 'Reflexionsfragen' : 'journalen',
                                                             'Psychoedukation' : 'learning', 'praktisch' : 'creative',
                                                             'affektiv' : 'abschalten'})
     ex_data = ex_data[ex_data['Category'] == cat]
-    list_ex = ex_data['Bez.'].values 
+    list_ex = ex_data['Bez.'].values
     return list_ex
 
 def change_ranking(data, list_ex, score_col, ex_col):
