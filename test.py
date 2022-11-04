@@ -18,7 +18,7 @@ user_id = "3FTsO3V9ACTkMNYu1lh8"
 input_time = 30
 input_cat = "meditation"
 model = Recommender()
-model.load_state_dict(torch.load("model.pt"))
+model.load_state_dict(torch.load("model_v2.pt"))
 model.eval()
 
 top3 = recommendation(user_id,input_time,input_cat, model)
