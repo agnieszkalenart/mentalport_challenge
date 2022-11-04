@@ -15,10 +15,11 @@ from ensemble  import Recommender
 
 
 user_id = "3FTsO3V9ACTkMNYu1lh8"
-input_time = 30
-input_cat = "meditation"
+#user_id = "3ubZLnRhsmTEvuqQ8SLB"
+input_time = 5
+input_cat = "breathing"
 model = Recommender()
-model.load_state_dict(torch.load("model_v2.pt"))
+model.load_state_dict(torch.load("models/model_v2.pt"))
 model.eval()
 
 top3 = recommendation(user_id,input_time,input_cat, model)

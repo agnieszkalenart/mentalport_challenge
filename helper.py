@@ -8,6 +8,7 @@ import re
 
 # 3rd party imports
 import numpy as np
+import pandas as pd
 
 
 #### helper functions for the filters ##################################################################################
@@ -138,6 +139,8 @@ def filter_exercises(ex_data, cat):
 
 def change_ranking(data, list_ex, score_col, ex_col):
     value = data[score_col].max()/2
-    data['additional_weight'] = data[ex_col].apply(lambda x: value if x in list_ex else 0)
-    data[score_col] = data[score_col] + data['additional_weight']
-    return data.nlargest(3, columns = score_col)[ex_col].values
+    add_weight = pd.Series(data.index).apply(lambda x: value if x in list_ex else 0)
+    add_weight.index = data.index
+    data[score_col] = data[score_col] + add_weight
+    data[score_col] = data[score_col].astype(float)
+    return data.nlargest(3, columns = score_col).index
