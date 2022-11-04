@@ -116,3 +116,20 @@ def predict(ratings, similarity, mode="user") -> np.ndarray:
             similarity
         ) / np.array([np.abs(similarity).sum(axis=1)])
     return np.clip(pred, a_min=0, a_max=5)
+
+
+def filter_exercises(ex_data, cat):
+    ex_data['Category'] = ex_data['bungsart/Durchfhrungsweise'].replace({'kognitiv' : 'thinking', 'meditativ' : 'meditation', 
+                                                            'Atemtechnik' : 'breathing', 'imaginr': 'visualisation', 
+                                                            'krperlich': 'bewegen', 'Reflexionsfragen' : 'journalen',
+                                                            'Psychoedukation' : 'learning', 'praktisch' : 'creative',
+                                                            'affektiv' : 'abschalten'})
+    ex_data = ex_data[ex_data['Category'] == cat]
+    list_ex = ex_data['Bez.'].values 
+    return list_ex
+
+def change_ranking(data, list_ex, score_col, ex_col):
+    value = data[score_col].max()/2
+    data['additional_weight'] = data[ex_col].apply(lambda x: value if x in list_ex else 0)
+    data[score_col] = data[score_col] + data['additional_weight']
+    return data.nlargest(3, columns = score_col)[ex_col].values
