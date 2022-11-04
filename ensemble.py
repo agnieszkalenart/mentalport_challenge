@@ -1,9 +1,18 @@
+"""
+File for training the hybrid recommender neural network
+"""
+
+
+# standard library imports
+from math import sqrt
+
+# 3rd party imports
 import torch
 import pandas as pd
 import numpy as np
 import seaborn as sns
-from math import sqrt
 
+# local imports (i.e. our own code)
 
 class Recommender(torch.nn.Module):
     def __init__(self):
