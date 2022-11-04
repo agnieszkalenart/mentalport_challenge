@@ -11,7 +11,7 @@ import numpy as np
 # local imports (i.e. our own code)
 from helper import preprocess_time, filter_time, filter_exercises, change_ranking
 
-exercises=pd.read_csv("mp_data-main/mp_data/exercise-original-fixed.csv")
+exercises=pd.read_csv("data/mp_data/exercise-original-fixed.csv")
 
 
 def filter(model_data, exercises_data, input_time, input_cat, ex_col, score_col):
@@ -24,10 +24,10 @@ def filter(model_data, exercises_data, input_time, input_cat, ex_col, score_col)
     return top3
 
 def recommendation(user_id,input_time,input_cat, model):
-    user_based = pd.read_csv("mp_data-main/mp_data/out/user-predictions.csv", index_col=0)
-    item_based = pd.read_csv("mp_data-main/mp_data/out/item-predictions.csv", index_col=0)
-    content_based = pd.read_csv("mp_data-main/mp_data/out/content_based.csv", index_col=0)
-    exercises=pd.read_csv("mp_data-main/mp_data/exercise-original-fixed.csv")
+    user_based = pd.read_csv("data/out/user-predictions.csv", index_col=0)
+    item_based = pd.read_csv("data/out/item-predictions.csv", index_col=0)
+    content_based = pd.read_csv("data/out/content_based.csv", index_col=0)
+    exercises=pd.read_csv("data/mp_data/exercise-original-fixed.csv")
     model_data = pd.DataFrame(columns = ["ex_col","score_col"])
     model_data["ex_col"] = exercises["Bez."]
     model_data.set_index('ex_col')
