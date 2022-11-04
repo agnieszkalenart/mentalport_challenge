@@ -73,10 +73,10 @@ class RecommenderDataset(torch.utils.data.Dataset):
 
 
 data = RecommenderDataset(
-    r"mp_data-main\out\user-predictions.csv",
-    r"mp_data-main\out\item-predictions.csv",
-    r"mp_data-main\out\content_based.csv",
-    r"mp_data-main\out\user-item-matrix.csv",
+    r"data\out\user-predictions.csv",
+    r"data\out\item-predictions.csv",
+    r"data\out\content_based.csv",
+    r"data\out\user-item-matrix.csv",
 )
 dataloader = torch.utils.data.DataLoader(data, batch_size=32, shuffle=True)
 model = Recommender()
