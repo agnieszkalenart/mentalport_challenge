@@ -79,9 +79,30 @@ ui_matrix_user_based_df = pd.DataFrame(
 ui_matrix = iu_matrix.T
 
 # store the user-item matrices (1. actual ratings, 2. item-based CF predictions, 3. user-based CF predictions)
-
 '''
 ui_matrix.to_csv("data\\out\\user-item-matrix.csv")
 ui_matrix_item_based_df.to_csv("data\\out\\user-predictions.csv")
 ui_matrix_user_based_df.to_csv("data\\out\\item-predictions.csv")
 '''
+
+# additionally create collaborative filtering predictions without clipping
+# create the item-based collaborative filtering prediction matrix
+ui_matrix_item_based_no_clip = predict(iu_matrix.T, item_similarities, mode="item", clip=False)
+
+# create the user-based collaborative filtering prediction matrix
+ui_matrix_user_based_no_clip = predict(iu_matrix.T, user_similarities, mode="user", clip=False)
+
+# replace indices user and item IDs
+ui_matrix_item_based_df_no_clip = pd.DataFrame(
+    ui_matrix_user_based_no_clip, index=iu_matrix.columns, columns=iu_matrix.index
+)
+ui_matrix_user_based_df_no_clip = pd.DataFrame(
+    ui_matrix_item_based_no_clip, index=iu_matrix.columns, columns=iu_matrix.index
+)
+
+# store the user-item matrices without clipping (1. item-based CF predictions, 2. user-based CF predictions)
+'''
+ui_matrix_user_based_df_no_clip.to_csv("data\\out\\item-predictions-noclip.csv")
+ui_matrix_item_based_df_no_clip.to_csv("data\\out\\user-predictions-noclip.csv")
+'''
+
