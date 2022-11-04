@@ -1,14 +1,11 @@
 # standard library imports
-
-# 3rd party imports
 from tkinter import *
 from tkinter import messagebox
+# 3rd party imports
 import customtkinter
 from happytransformer import HappyTextClassification
 
 # local imports (i.e. our own code)
-
-
 
 
 
